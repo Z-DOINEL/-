@@ -18,6 +18,7 @@ from urllib import robotparser
 import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(BASE_DIR, "config.json")
@@ -64,16 +65,28 @@ def fetch_bing_rss(name, query):
 
 
 def fetch_official_page(name, url):
+    """
+    用无头浏览器（真的打开网页、等JS跑完）去抓取，而不是只读最原始的HTML代码，
+    这样能抓到那些"页面加载完之后才由JavaScript生成"的公告/活动链接，
+    而不是只抓到写死在原始代码里的导航栏链接（常见的表现就是抓到的全是首页链接）。
+    """
     items = []
     if not is_scraping_allowed(url):
         print(f"[跳过] 「{name}」禁止自动抓取：{url}")
         return items
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-        resp.raise_for_status()
-        resp.encoding = resp.apparent_encoding
-        soup = BeautifulSoup(resp.text, "html.parser")
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page(user_agent=HEADERS["User-Agent"])
+            page.goto(url, timeout=30000, wait_until="networkidle")
+            # 有些网站networkidle之后还有一点点异步渲染，再多等一下更保险
+            page.wait_for_timeout(1500)
+            html = page.content()
+            browser.close()
+
+        soup = BeautifulSoup(html, "html.parser")
         seen = set()
+        base_netloc = urlparse(url).netloc
         for a in soup.find_all("a"):
             text = (a.get_text() or "").strip()
             href = a.get("href") or ""
@@ -82,6 +95,11 @@ def fetch_official_page(name, url):
             if not href or href.startswith("javascript") or href.startswith("#"):
                 continue
             full_link = href if href.startswith("http") else _join_url(url, href)
+            # 过滤掉指向首页/栏目页本身的链接（比如链接就是官网根地址），
+            # 这类链接价值不大，容易造成"点开全是首页"的情况
+            link_path = urlparse(full_link).path.strip("/")
+            if urlparse(full_link).netloc == base_netloc and link_path == "":
+                continue
             if full_link in seen:
                 continue
             seen.add(full_link)
