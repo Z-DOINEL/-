@@ -1,0 +1,59 @@
+name: 管理关键词和官网列表
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: '操作类型'
+        required: true
+        type: choice
+        options:
+          - 添加关键词
+          - 删除关键词
+          - 启用关键词
+          - 停用关键词
+          - 添加官网
+          - 删除官网
+          - 启用官网
+          - 停用官网
+      name:
+        description: '名称（关键词的名字，或官网的名字；删除/启用/停用时用这个来找到对应项）'
+        required: false
+        type: string
+      value:
+        description: '仅"添加"时需要填：搜索词内容（添加关键词）或 网址（添加官网）'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  manage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 修改配置文件
+        env:
+          ACTION_TYPE: ${{ inputs.action }}
+          ITEM_NAME: ${{ inputs.name }}
+          ITEM_VALUE: ${{ inputs.value }}
+        run: python manage_config.py
+
+      - name: 提交修改
+        env:
+          ACTION_TYPE: ${{ inputs.action }}
+          ITEM_NAME: ${{ inputs.name }}
+        run: |
+          git config user.name "event-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add config.json
+          git diff --cached --quiet && echo "没有变化，跳过提交" || git commit -m "手动调整信息源：${ACTION_TYPE} ${ITEM_NAME}"
+          git push
