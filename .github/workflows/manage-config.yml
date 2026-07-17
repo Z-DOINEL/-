@@ -1,4 +1,4 @@
-name: 管理关键词和官网列表
+name: 管理展会门户列表
 
 on:
   workflow_dispatch:
@@ -8,24 +8,16 @@ on:
         required: true
         type: choice
         options:
-          - 添加关键词
-          - 删除关键词
-          - 启用关键词
-          - 停用关键词
-          - 添加官网
-          - 删除官网
-          - 启用官网
-          - 停用官网
           - 添加展会门户
           - 删除展会门户
           - 启用展会门户
           - 停用展会门户
       name:
-        description: '名称（关键词的名字，或官网的名字；删除/启用/停用时用这个来找到对应项）'
+        description: '名称（展会门户网站的名字；删除/启用/停用时用这个来找到对应项）'
         required: false
         type: string
       value:
-        description: '仅"添加"时需要填：搜索词内容（添加关键词）或 网址（添加官网）'
+        description: '仅"添加"时需要填：网址'
         required: false
         type: string
 
@@ -59,5 +51,5 @@ jobs:
           git config user.name "event-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
           git add config.json
-          git diff --cached --quiet && echo "没有变化，跳过提交" || git commit -m "手动调整信息源：${ACTION_TYPE} ${ITEM_NAME}"
+          git diff --cached --quiet && echo "没有变化，跳过提交" || git commit -m "手动调整展会门户：${ACTION_TYPE} ${ITEM_NAME}"
           git push
