@@ -68,6 +68,15 @@ def fetch_exhibition_portal(name, url):
     if not is_scraping_allowed(url):
         print(f"[跳过] 「{name}」禁止自动抓取：{url}")
         return items
+
+    # 先用最简单直接的普通请求测试一下这个网站到底能不能连上（不用无头浏览器），
+    # 用来区分"网站完全连不上/屏蔽了云服务器IP" 还是 "只是无头浏览器这种方式被特别拦截"
+    try:
+        diag_resp = requests.get(url, headers=HEADERS, timeout=15)
+        print(f"[诊断] 普通请求「{name}」：状态码 {diag_resp.status_code}，返回内容长度 {len(diag_resp.text)} 字符")
+    except Exception as diag_e:
+        print(f"[诊断] 普通请求「{name}」也失败了：{diag_e}（说明大概率是网络层面连不上，不是无头浏览器的问题）")
+
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch()
