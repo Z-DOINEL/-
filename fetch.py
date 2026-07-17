@@ -1,82 +1,32 @@
 # -*- coding: utf-8 -*-
 """
 由 GitHub Actions 在云端定时执行（每天固定两个时间点），负责：
-1. 读取 config.json 里的关键词和官网列表
-2. 抓取必应关键词新闻RSS + 官网页面链接
-3. 和已有的 data.json 合并（不覆盖旧数据，只增量添加新条目）
+1. 读取 config.json 里的"展会门户网站"列表
+2. 用无头浏览器（真正打开网页、等它加载完）去这些网站里找展会信息
+3. 跟已有的 data.json 合并（不覆盖旧数据，只增量添加新条目，并清理已经办完的旧展会）
 4. 把结果写回 data.json，交给 index.html 网页展示
 
-这个脚本本身不生成网页界面，只负责"抓数据、存数据"。
+之前"关键词搜索"和"通用官网监测"这两条路已经放弃不用了，
+现在只保留"展会门户网站"这一种信息来源，因为它的信息格式更规整、更准确。
 """
 import json
 import os
 import re
 import hashlib
 from datetime import datetime, timezone, timedelta
-from email.utils import parsedate_to_datetime
-from urllib.parse import urlparse, quote
+from urllib.parse import urlparse
 from urllib import robotparser
 
-import requests
-import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
+import requests
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(BASE_DIR, "config.json")
 DATA_PATH = os.path.join(BASE_DIR, "data.json")
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EventTrackerBot/1.0)"}
-TIMEOUT = 15
-RECENT_DAYS = 7  # 只保留最近7天内发布的内容，超过7天的不要
-
-DATE_PATTERNS = [
-    re.compile(r'(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})日?'),
-]
-
-
-def is_recent_enough(pub_date_str):
-    """没有日期信息时不过滤（交给前端标注"日期未知"），能解析出日期的才判断是否太老。"""
-    if not pub_date_str:
-        return True
-    try:
-        dt = parsedate_to_datetime(pub_date_str)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return (datetime.now(timezone.utc) - dt) <= timedelta(days=RECENT_DAYS)
-    except Exception:
-        try:
-            for pat in DATE_PATTERNS:
-                m = pat.search(pub_date_str)
-                if m:
-                    y, mo, d = (int(x) for x in m.groups())
-                    dt = datetime(y, mo, d, tzinfo=timezone.utc)
-                    return (datetime.now(timezone.utc) - dt) <= timedelta(days=RECENT_DAYS)
-        except Exception:
-            pass
-        return True
-
-
-def extract_nearby_date(a_tag):
-    """尝试从链接自身、父节点、祖父节点的文字里找发布日期，找不到就返回空字符串（不瞎猜）。"""
-    node = a_tag
-    for _ in range(3):
-        if node is None:
-            break
-        try:
-            text = node.get_text(" ", strip=True)
-        except Exception:
-            text = ""
-        for pat in DATE_PATTERNS:
-            m = pat.search(text)
-            if m:
-                y, mo, d = (int(x) for x in m.groups())
-                try:
-                    return f"{y:04d}-{mo:02d}-{d:02d}"
-                except Exception:
-                    pass
-        node = node.parent
-    return ""
+EVENT_DATE_PATTERN = re.compile(r'(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})日?')
 
 
 def make_id(link, title):
@@ -96,39 +46,16 @@ def is_scraping_allowed(url):
         return True
 
 
-def fetch_bing_rss(name, query):
-    url = "https://www.bing.com/news/search?q=" + quote(query) + "&format=rss"
-    items = []
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-        resp.raise_for_status()
-        root = ET.fromstring(resp.content)
-        skipped_old = 0
-        for item in root.iter("item"):
-            title = (item.findtext("title") or "").strip()
-            link = (item.findtext("link") or "").strip()
-            pub_date = (item.findtext("pubDate") or "").strip()
-            summary = (item.findtext("description") or "").strip()
-            if not (title and link):
-                continue
-            if not is_recent_enough(pub_date):
-                skipped_old += 1
-                continue
-            items.append({"title": title, "link": link, "pub_date": pub_date,
-                          "summary": summary, "source": f"关键词：{name}"})
-        if skipped_old:
-            print(f"「{name}」过滤掉 {skipped_old} 条超过{RECENT_DAYS}天的旧内容")
-    except Exception as e:
-        print(f"[警告] 抓取关键词「{name}」失败：{e}")
-    return items
+def _join_url(base, href):
+    parsed = urlparse(base)
+    if href.startswith("/"):
+        return f"{parsed.scheme}://{parsed.netloc}{href}"
+    return base.rstrip("/") + "/" + href
 
-
-EVENT_DATE_PATTERN = re.compile(r'(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})日?')
 
 def fetch_exhibition_portal(name, url):
     """
-    专门针对"展会门户网站"（比如eshow365.com这类）写的精确抓取规则，
-    跟通用的官网抓取（fetch_official_page）不是一回事：
+    专门针对"展会门户网站"（比如eshow365.com这类）写的抓取规则：
     这类网站每条展会信息格式比较规整（分类标签+展会名称链接+场馆+日期），
     抓取思路是找到"指向展会详情页"的链接（网址里带 /zhanhui/html/数字_0.html 这种规律），
     再往它附近找日期。
@@ -154,7 +81,6 @@ def fetch_exhibition_portal(name, url):
         seen = set()
         today = datetime.now(timezone.utc).date()
 
-        # 展会详情页链接的网址规律：.../zhanhui/html/数字_0.html
         detail_link_pattern = re.compile(r'/zhanhui/html/\d+_0\.html')
 
         for a in soup.find_all("a", href=detail_link_pattern):
@@ -184,8 +110,7 @@ def fetch_exhibition_portal(name, url):
                     break
                 node = node.parent
 
-            # 只保留"还没举办/即将举办"的展会，已经开完的不要
-            # （这里判断的是"举办日期"，跟关键词/官网那边"发布日期是否过期"是两套不同的逻辑，不能混用）
+            # 只保留"还没举办/即将举办"的展会，已经开完超过2天的不要
             if event_date:
                 try:
                     y, mo, d = (int(x) for x in event_date.split("-"))
@@ -199,88 +124,6 @@ def fetch_exhibition_portal(name, url):
     except Exception as e:
         print(f"[警告] 抓取展会门户「{name}」失败：{e}")
     return items
-
-
-def fetch_official_page(name, url):
-    """
-    用无头浏览器（真的打开网页、等JS跑完）去抓取，而不是只读最原始的HTML代码，
-    这样能抓到那些"页面加载完之后才由JavaScript生成"的公告/活动链接，
-    而不是只抓到写死在原始代码里的导航栏链接（常见的表现就是抓到的全是首页链接）。
-    """
-    items = []
-    if not is_scraping_allowed(url):
-        print(f"[跳过] 「{name}」禁止自动抓取：{url}")
-        return items
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            page = browser.new_page(user_agent=HEADERS["User-Agent"])
-            page.goto(url, timeout=45000, wait_until="domcontentloaded")
-            # 不用"networkidle"这个太严格的等待条件——有些网站有持续的后台请求
-            # （比如统计代码、广告脚本），永远达不到"完全没有网络活动"这个状态，
-            # 导致白白等到超时。改成"页面基本内容加载完"就往下走，
-            # 再额外多等几秒，给JS一点时间把动态内容渲染出来
-            page.wait_for_timeout(4000)
-            html = page.content()
-            browser.close()
-
-        soup = BeautifulSoup(html, "html.parser")
-        seen = set()
-        base_netloc = urlparse(url).netloc
-        for a in soup.find_all("a"):
-            text = (a.get_text() or "").strip()
-            href = a.get("href") or ""
-            if len(text) < 8 or len(text) > 100:
-                continue
-            if not href or href.startswith("javascript") or href.startswith("#"):
-                continue
-            full_link = href if href.startswith("http") else _join_url(url, href)
-            # 过滤掉指向首页/栏目页本身的链接（比如链接就是官网根地址），
-            # 这类链接价值不大，容易造成"点开全是首页"的情况
-            link_path = urlparse(full_link).path.strip("/")
-            if urlparse(full_link).netloc == base_netloc and link_path == "":
-                continue
-            if full_link in seen:
-                continue
-            seen.add(full_link)
-            found_date = extract_nearby_date(a)
-            if found_date and not is_recent_enough(found_date):
-                continue  # 找到日期但太老了，跳过
-            summary = extract_nearby_summary(a, text)
-            items.append({"title": text, "link": full_link, "pub_date": found_date,
-                          "summary": summary, "source": f"官网：{name}"})
-    except Exception as e:
-        print(f"[警告] 抓取官网「{name}」失败：{e}")
-    return items
-
-
-def extract_nearby_summary(a_tag, title_text):
-    """
-    尝试从链接所在的父容器里，找一段跟标题不同的文字当摘要，
-    让抓到的内容看起来像一条真正的动态，而不只是一个孤零零的链接。
-    找不到合适的摘要就返回空字符串，不瞎编。
-    """
-    node = a_tag.parent
-    for _ in range(2):
-        if node is None:
-            break
-        try:
-            full_text = node.get_text(" ", strip=True)
-        except Exception:
-            full_text = ""
-        # 去掉标题本身，剩下的如果还有一段有意义的文字，就当摘要
-        remainder = full_text.replace(title_text, "", 1).strip(" -–—|·")
-        if len(remainder) >= 10:
-            return remainder[:120]
-        node = node.parent
-    return ""
-
-
-def _join_url(base, href):
-    parsed = urlparse(base)
-    if href.startswith("/"):
-        return f"{parsed.scheme}://{parsed.netloc}{href}"
-    return base.rstrip("/") + "/" + href
 
 
 def main():
@@ -298,14 +141,6 @@ def main():
     new_count = 0
 
     all_fetched = []
-    for kw in config.get("keywords", []):
-        if kw.get("enabled") is False:
-            continue
-        all_fetched.extend(fetch_bing_rss(kw["name"], kw["q"]))
-    for pg in config.get("official_pages", []):
-        if pg.get("enabled") is False:
-            continue
-        all_fetched.extend(fetch_official_page(pg["name"], pg["url"]))
     for ex in config.get("exhibition_portals", []):
         if ex.get("enabled") is False:
             continue
@@ -326,23 +161,30 @@ def main():
             existing_ids.add(item_id)
             new_count += 1
 
-    # 已经存进data.json的老数据，如果知道真实发布日期且已经超过时效窗口，也清理掉
-    # （不知道发布日期的保留，毕竟没法判断它到底是不是真的过时了）
+    # 已经办完的旧展会（超过2天）从data.json里也清理掉，不只是新抓的才过滤
+    today = datetime.now(timezone.utc).date()
     before_prune = len(data["items"])
-    data["items"] = [
-        it for it in data["items"]
-        if not it.get("pub_date") or is_recent_enough(it["pub_date"])
-    ]
+    kept = []
+    for it in data["items"]:
+        pd = it.get("pub_date") or ""
+        if pd:
+            try:
+                y, mo, d = (int(x) for x in pd.split("-"))
+                if datetime(y, mo, d).date() < today - timedelta(days=2):
+                    continue
+            except Exception:
+                pass
+        kept.append(it)
+    data["items"] = kept
     pruned_count = before_prune - len(data["items"])
 
-    # 只保留最近800条，避免数据无限增长
-    data["items"] = sorted(data["items"], key=lambda x: x.get("first_seen", ""), reverse=True)[:800]
+    data["items"] = sorted(data["items"], key=lambda x: x.get("pub_date") or x.get("first_seen", ""))[:800]
     data["last_run"] = now
 
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"本次运行完成，新增 {new_count} 条内容，清理 {pruned_count} 条过期旧内容，共 {len(data['items'])} 条。")
+    print(f"本次运行完成，新增 {new_count} 条内容，清理 {pruned_count} 条已过期展会，共 {len(data['items'])} 条。")
 
 
 if __name__ == "__main__":
