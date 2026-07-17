@@ -108,13 +108,14 @@ def fetch_bing_rss(name, query):
             title = (item.findtext("title") or "").strip()
             link = (item.findtext("link") or "").strip()
             pub_date = (item.findtext("pubDate") or "").strip()
+            summary = (item.findtext("description") or "").strip()
             if not (title and link):
                 continue
             if not is_recent_enough(pub_date):
                 skipped_old += 1
                 continue
             items.append({"title": title, "link": link, "pub_date": pub_date,
-                          "source": f"关键词：{name}"})
+                          "summary": summary, "source": f"关键词：{name}"})
         if skipped_old:
             print(f"「{name}」过滤掉 {skipped_old} 条超过{RECENT_DAYS}天的旧内容")
     except Exception as e:
@@ -167,11 +168,34 @@ def fetch_official_page(name, url):
             found_date = extract_nearby_date(a)
             if found_date and not is_recent_enough(found_date):
                 continue  # 找到日期但太老了，跳过
+            summary = extract_nearby_summary(a, text)
             items.append({"title": text, "link": full_link, "pub_date": found_date,
-                          "source": f"官网：{name}"})
+                          "summary": summary, "source": f"官网：{name}"})
     except Exception as e:
         print(f"[警告] 抓取官网「{name}」失败：{e}")
     return items
+
+
+def extract_nearby_summary(a_tag, title_text):
+    """
+    尝试从链接所在的父容器里，找一段跟标题不同的文字当摘要，
+    让抓到的内容看起来像一条真正的动态，而不只是一个孤零零的链接。
+    找不到合适的摘要就返回空字符串，不瞎编。
+    """
+    node = a_tag.parent
+    for _ in range(2):
+        if node is None:
+            break
+        try:
+            full_text = node.get_text(" ", strip=True)
+        except Exception:
+            full_text = ""
+        # 去掉标题本身，剩下的如果还有一段有意义的文字，就当摘要
+        remainder = full_text.replace(title_text, "", 1).strip(" -–—|·")
+        if len(remainder) >= 10:
+            return remainder[:120]
+        node = node.parent
+    return ""
 
 
 def _join_url(base, href):
@@ -214,6 +238,7 @@ def main():
                 "link": it["link"],
                 "source": it["source"],
                 "pub_date": it.get("pub_date", ""),
+                "summary": it.get("summary", ""),
                 "first_seen": now,
             })
             existing_ids.add(item_id)
