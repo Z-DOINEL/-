@@ -123,6 +123,84 @@ def fetch_bing_rss(name, query):
     return items
 
 
+EVENT_DATE_PATTERN = re.compile(r'(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})日?')
+
+def fetch_exhibition_portal(name, url):
+    """
+    专门针对"展会门户网站"（比如eshow365.com这类）写的精确抓取规则，
+    跟通用的官网抓取（fetch_official_page）不是一回事：
+    这类网站每条展会信息格式比较规整（分类标签+展会名称链接+场馆+日期），
+    抓取思路是找到"指向展会详情页"的链接（网址里带 /zhanhui/html/数字_0.html 这种规律），
+    再往它附近找日期。
+
+    注意：这段代码没有在真实网络环境里跑通过（沙盒里无法访问这个网站），
+    第一次实际部署后如果发现抓不到东西或者抓的位置不对，
+    把运行日志发回去，需要照实际情况再调整。
+    """
+    items = []
+    if not is_scraping_allowed(url):
+        print(f"[跳过] 「{name}」禁止自动抓取：{url}")
+        return items
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page(user_agent=HEADERS["User-Agent"])
+            page.goto(url, timeout=45000, wait_until="domcontentloaded")
+            page.wait_for_timeout(2500)
+            html = page.content()
+            browser.close()
+
+        soup = BeautifulSoup(html, "html.parser")
+        seen = set()
+        today = datetime.now(timezone.utc).date()
+
+        # 展会详情页链接的网址规律：.../zhanhui/html/数字_0.html
+        detail_link_pattern = re.compile(r'/zhanhui/html/\d+_0\.html')
+
+        for a in soup.find_all("a", href=detail_link_pattern):
+            title = (a.get_text() or "").strip() or (a.get("title") or "").strip()
+            href = a.get("href") or ""
+            if not title or not href:
+                continue
+            full_link = href if href.startswith("http") else _join_url(url, href)
+            if full_link in seen:
+                continue
+            seen.add(full_link)
+
+            # 在这条链接所在的父容器文字里找日期（展会举办日期，不是发布日期）
+            event_date = ""
+            node = a.parent
+            for _ in range(3):
+                if node is None:
+                    break
+                text = node.get_text(" ", strip=True)
+                m = EVENT_DATE_PATTERN.search(text)
+                if m:
+                    y, mo, d = (int(x) for x in m.groups())
+                    try:
+                        event_date = f"{y:04d}-{mo:02d}-{d:02d}"
+                    except Exception:
+                        pass
+                    break
+                node = node.parent
+
+            # 只保留"还没举办/即将举办"的展会，已经开完的不要
+            # （这里判断的是"举办日期"，跟关键词/官网那边"发布日期是否过期"是两套不同的逻辑，不能混用）
+            if event_date:
+                try:
+                    y, mo, d = (int(x) for x in event_date.split("-"))
+                    if datetime(y, mo, d).date() < today - timedelta(days=2):
+                        continue
+                except Exception:
+                    pass
+
+            items.append({"title": title, "link": full_link, "pub_date": event_date,
+                          "summary": "", "source": f"展会门户：{name}"})
+    except Exception as e:
+        print(f"[警告] 抓取展会门户「{name}」失败：{e}")
+    return items
+
+
 def fetch_official_page(name, url):
     """
     用无头浏览器（真的打开网页、等JS跑完）去抓取，而不是只读最原始的HTML代码，
@@ -228,6 +306,10 @@ def main():
         if pg.get("enabled") is False:
             continue
         all_fetched.extend(fetch_official_page(pg["name"], pg["url"]))
+    for ex in config.get("exhibition_portals", []):
+        if ex.get("enabled") is False:
+            continue
+        all_fetched.extend(fetch_exhibition_portal(ex["name"], ex["url"]))
 
     for it in all_fetched:
         item_id = make_id(it["link"], it["title"])
