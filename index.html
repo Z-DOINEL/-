@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>活动清单</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0F1416; --card:rgba(255,255,255,0.045); --card-solid:#1A2226;
+    --ink:#EDEAE1; --ink-soft:#9B9689; --ink-faint:#635E54;
+    --border:rgba(255,255,255,0.09); --border-strong:rgba(255,255,255,0.18);
+    --accent:#4FBFB8; --accent-dim:rgba(79,191,184,0.15); --amber:#E3A63E;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:radial-gradient(1200px 600px at 50% -10%, #1B2528 0%, var(--bg) 55%);
+    color:var(--ink);font-family:'Inter',-apple-system,"Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; min-height:100vh;}
+  header{padding:30px 28px 22px;}
+  header h1{margin:0;font-family:'Manrope',sans-serif;font-size:27px;font-weight:800;letter-spacing:-0.02em;color:var(--ink);}
+  header .meta{font-size:12.5px;color:var(--ink-faint);margin-top:6px;font-weight:500;}
+  #main{max-width:720px;margin:0 auto;padding:6px 18px 60px;}
+  .toolbar{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap;align-items:center;}
+  .toolbar button{
+    position:relative; overflow:hidden; isolation:isolate;
+    border:1px solid var(--border); background:var(--card);
+    backdrop-filter:blur(16px) saturate(160%); -webkit-backdrop-filter:blur(16px) saturate(160%);
+    border-radius:12px; padding:13px 24px;
+    font-size:15.5px; font-weight:700; font-family:'Inter',sans-serif; cursor:pointer; color:var(--ink);
+    transition:border-color .25s ease, box-shadow .25s ease, transform .2s cubic-bezier(.2,.8,.3,1); letter-spacing:-0.01em;
+  }
+  .toolbar button::before{
+    content:''; position:absolute; inset:0; z-index:-1; border-radius:inherit;
+    background:radial-gradient(220px circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,0.28), rgba(255,255,255,0.06) 45%, transparent 75%);
+    opacity:0; transition:opacity .35s ease;
+  }
+  .toolbar button:hover{
+    border-color:var(--border-strong); transform:translateY(-2px) scale(1.015);
+    box-shadow:0 0 0 1px rgba(255,255,255,0.06), 0 10px 28px rgba(0,0,0,0.4), 0 0 24px rgba(255,255,255,0.05);
+  }
+  .toolbar button:hover::before{ opacity:1; }
+  .toolbar button:active{transform:translateY(0) scale(0.99);}
+  .toolbar button.active{background:var(--accent-dim); color:var(--accent); border-color:rgba(79,191,184,0.4);}
+  .row{
+    display:flex; align-items:center; gap:12px; background:var(--card); border:1px solid var(--border);
+    backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    border-radius:12px; padding:14px 16px; margin-bottom:9px; transition:box-shadow .18s ease, transform .18s ease, border-color .18s ease;
+  }
+  .row:hover{box-shadow:0 8px 24px rgba(0,0,0,0.3); transform:translateY(-1px); border-color:var(--border-strong);}
+  .envelope{flex-shrink:0;cursor:pointer;width:22px;height:22px;transition:transform .15s ease;}
+  .envelope:hover{transform:scale(1.1);}
+  .title-wrap{flex:1;min-width:0;}
+  .title-wrap a{font-size:15px;font-weight:700;color:var(--ink);text-decoration:none;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:-0.01em;}
+  .row.read .title-wrap a{font-weight:500;color:var(--ink-soft);}
+  .title-wrap .src{font-size:11.5px;color:var(--ink-faint);margin-top:3px;font-weight:500;}
+  .date{flex-shrink:0;font-size:13px;color:var(--ink-soft);font-variant-numeric:tabular-nums;font-weight:600;}
+  .star{flex-shrink:0;cursor:pointer;width:20px;height:20px;transition:transform .15s ease;}
+  .star:hover{transform:scale(1.15);}
+  .empty-state{text-align:center;padding:60px 20px;color:var(--ink-faint);font-size:13.5px;}
+</style>
+</head>
+<body>
+<header>
+  <h1>活动清单</h1>
+  <div class="meta" id="last-run">加载中…</div>
+</header>
+<div id="main">
+  <div class="toolbar">
+    <button id="filter-all" class="active" onclick="setFilter('all')">全部</button>
+    <button id="filter-unread" onclick="setFilter('unread')">未读</button>
+    <button id="filter-fav" onclick="setFilter('fav')">收藏</button>
+  </div>
+  <div id="list"></div>
+</div>
+
+<script>
+const READ_KEY = 'event-tracker-read-ids';
+const FAV_KEY = 'event-tracker-fav-ids';
+let currentFilter = 'all';
+let allItems = [];
+
+function getSet(key){
+  try{ return new Set(JSON.parse(localStorage.getItem(key) || '[]')); }
+  catch(e){ return new Set(); }
+}
+function saveSet(key, set){
+  localStorage.setItem(key, JSON.stringify([...set]));
+}
+let readIds = getSet(READ_KEY);
+let favIds = getSet(FAV_KEY);
+
+function envelopeIcon(isRead){
+  return isRead
+    ? `<svg viewBox="0 0 24 24" fill="none"><path d="M4 9L12 3.5L20 9" stroke="#635E54" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="9" width="18" height="10.5" rx="2.5" stroke="#635E54" stroke-width="1.5"/><path d="M3.5 9.8L12 15L20.5 9.8" stroke="#635E54" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`
+    : `<svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="#E3A63E" stroke-width="1.8"/><path d="M3.5 6L12 13.2L20.5 6" stroke="#E3A63E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+function starIcon(isFav){
+  return isFav
+    ? `<svg viewBox="0 0 24 24" fill="#E3A63E"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>`
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="#635E54" stroke-width="1.6"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>`;
+}
+
+function formatDate(pubDateStr, fallbackIso){
+  let d = pubDateStr ? new Date(pubDateStr) : null;
+  if(!d || isNaN(d)) d = fallbackIso ? new Date(fallbackIso) : null;
+  if(!d || isNaN(d)) return '未知日期';
+  const y = d.getFullYear(), m = String(d.getMonth()+1).padStart(2,'0'), day = String(d.getDate()).padStart(2,'0');
+  return `${y}/${m}/${day}`;
+}
+
+async function loadData(){
+  try{
+    const res = await fetch('data.json?_=' + Date.now());
+    const data = await res.json();
+    allItems = data.items || [];
+    document.getElementById('last-run').textContent = data.last_run
+      ? ('最近抓取时间：' + new Date(data.last_run).toLocaleString('zh-CN'))
+      : '还没有抓取记录';
+  }catch(e){
+    document.getElementById('last-run').textContent = '数据加载失败，请稍后刷新重试';
+  }
+  render();
+}
+
+function setFilter(f){
+  currentFilter = f;
+  document.querySelectorAll('.toolbar button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('filter-'+f).classList.add('active');
+  render();
+}
+
+function toggleRead(id){
+  if(readIds.has(id)) readIds.delete(id); else readIds.add(id);
+  saveSet(READ_KEY, readIds);
+  render();
+}
+function toggleFav(id){
+  if(favIds.has(id)) favIds.delete(id); else favIds.add(id);
+  saveSet(FAV_KEY, favIds);
+  render();
+}
+function openItem(id, link){
+  readIds.add(id);
+  saveSet(READ_KEY, readIds);
+  window.open(link, '_blank', 'noopener,noreferrer');
+  render();
+}
+
+function render(){
+  let items = [...allItems].sort((a,b) => (b.pub_date||b.first_seen||'').localeCompare(a.pub_date||a.first_seen||''));
+  if(currentFilter === 'unread') items = items.filter(it => !readIds.has(it.id));
+  if(currentFilter === 'fav') items = items.filter(it => favIds.has(it.id));
+
+  const list = document.getElementById('list');
+  if(!items.length){
+    list.innerHTML = '<div class="empty-state">这里暂时没有内容</div>';
+    return;
+  }
+  list.innerHTML = items.map(it => {
+    const isRead = readIds.has(it.id);
+    const isFav = favIds.has(it.id);
+    return `
+      <div class="row ${isRead?'read':''}">
+        <span class="envelope" onclick="toggleRead('${it.id}')" title="标记已读/未读">${envelopeIcon(isRead)}</span>
+        <div class="title-wrap">
+          <a href="${escapeHtml(it.link)}" onclick="openItem('${it.id}','${escapeHtml(it.link)}'); return false;">${escapeHtml(it.title)}</a>
+          <div class="src">${escapeHtml(it.source||'')}</div>
+        </div>
+        <span class="date">${formatDate(it.pub_date, it.first_seen)}</span>
+        <span class="star" onclick="toggleFav('${it.id}')" title="收藏/取消收藏">${starIcon(isFav)}</span>
+      </div>
+    `;
+  }).join('');
+}
+
+function escapeHtml(str){
+  return (str||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+document.addEventListener('mousemove', (e) => {
+  const btn = e.target.closest('button');
+  if(btn){
+    const rect = btn.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    btn.style.setProperty('--mx', x + '%');
+    btn.style.setProperty('--my', y + '%');
+  }
+});
+
+loadData();
+</script>
+</body>
+</html>
