@@ -261,6 +261,11 @@
         <span class="cfg-hint">当前已配置的官网</span>
       </div>
       <div id="src-page-list"></div>
+      <div class="cfg-section-title" style="margin-top:16px;">
+        <span>展会门户网站</span>
+        <span class="cfg-hint">专门做展会信息汇总的网站，信息比较规整</span>
+      </div>
+      <div id="src-portal-list"></div>
       <a id="manage-link" href="#" target="_blank" rel="noopener noreferrer" class="manage-link-btn">
         去GitHub修改这份列表 →
       </a>
@@ -581,6 +586,15 @@ async function loadSources(){
         <div class="source-info"><div class="source-name">${escapeHtml(p.name)}</div><div class="source-url">${escapeHtml(p.url)}</div></div>
       </div>
     `).join('') || '<div style="font-size:12.5px;color:var(--ink-faint);">暂无</div>';
+    const portalList = document.getElementById('src-portal-list');
+    if(portalList){
+      portalList.innerHTML = (config.exhibition_portals||[]).map(p => `
+        <div class="source-item ${p.enabled===false?'disabled':''}">
+          <span class="source-status"></span>
+          <div class="source-info"><div class="source-name">${escapeHtml(p.name)}</div><div class="source-url">${escapeHtml(p.url)}</div></div>
+        </div>
+      `).join('') || '<div style="font-size:12.5px;color:var(--ink-faint);">暂无</div>';
+    }
   }catch(e){
     document.getElementById('src-kw-list').innerHTML = '<div style="font-size:12.5px;color:var(--ink-faint);">读取config.json失败</div>';
   }
