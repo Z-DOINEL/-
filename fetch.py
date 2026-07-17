@@ -46,7 +46,7 @@ def is_scraping_allowed(url):
 
 
 def fetch_bing_rss(name, query):
-    url = "https://cn.bing.com/news/search?q=" + quote(query) + "&format=rss"
+    url = "https://www.bing.com/news/search?q=" + quote(query) + "&format=rss"
     items = []
     try:
         resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
@@ -78,9 +78,12 @@ def fetch_official_page(name, url):
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page(user_agent=HEADERS["User-Agent"])
-            page.goto(url, timeout=30000, wait_until="networkidle")
-            # 有些网站networkidle之后还有一点点异步渲染，再多等一下更保险
-            page.wait_for_timeout(1500)
+            page.goto(url, timeout=45000, wait_until="domcontentloaded")
+            # 不用"networkidle"这个太严格的等待条件——有些网站有持续的后台请求
+            # （比如统计代码、广告脚本），永远达不到"完全没有网络活动"这个状态，
+            # 导致白白等到超时。改成"页面基本内容加载完"就往下走，
+            # 再额外多等几秒，给JS一点时间把动态内容渲染出来
+            page.wait_for_timeout(4000)
             html = page.content()
             browser.close()
 
