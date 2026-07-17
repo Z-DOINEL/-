@@ -10,8 +10,10 @@
 """
 import json
 import os
+import re
 import hashlib
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
 from urllib.parse import urlparse, quote
 from urllib import robotparser
 
@@ -26,6 +28,55 @@ DATA_PATH = os.path.join(BASE_DIR, "data.json")
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EventTrackerBot/1.0)"}
 TIMEOUT = 15
+RECENT_DAYS = 7  # 只保留最近7天内发布的内容，超过7天的不要
+
+DATE_PATTERNS = [
+    re.compile(r'(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})日?'),
+]
+
+
+def is_recent_enough(pub_date_str):
+    """没有日期信息时不过滤（交给前端标注"日期未知"），能解析出日期的才判断是否太老。"""
+    if not pub_date_str:
+        return True
+    try:
+        dt = parsedate_to_datetime(pub_date_str)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return (datetime.now(timezone.utc) - dt) <= timedelta(days=RECENT_DAYS)
+    except Exception:
+        try:
+            for pat in DATE_PATTERNS:
+                m = pat.search(pub_date_str)
+                if m:
+                    y, mo, d = (int(x) for x in m.groups())
+                    dt = datetime(y, mo, d, tzinfo=timezone.utc)
+                    return (datetime.now(timezone.utc) - dt) <= timedelta(days=RECENT_DAYS)
+        except Exception:
+            pass
+        return True
+
+
+def extract_nearby_date(a_tag):
+    """尝试从链接自身、父节点、祖父节点的文字里找发布日期，找不到就返回空字符串（不瞎猜）。"""
+    node = a_tag
+    for _ in range(3):
+        if node is None:
+            break
+        try:
+            text = node.get_text(" ", strip=True)
+        except Exception:
+            text = ""
+        for pat in DATE_PATTERNS:
+            m = pat.search(text)
+            if m:
+                y, mo, d = (int(x) for x in m.groups())
+                try:
+                    return f"{y:04d}-{mo:02d}-{d:02d}"
+                except Exception:
+                    pass
+        node = node.parent
+    return ""
 
 
 def make_id(link, title):
@@ -52,13 +103,20 @@ def fetch_bing_rss(name, query):
         resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
+        skipped_old = 0
         for item in root.iter("item"):
             title = (item.findtext("title") or "").strip()
             link = (item.findtext("link") or "").strip()
             pub_date = (item.findtext("pubDate") or "").strip()
-            if title and link:
-                items.append({"title": title, "link": link, "pub_date": pub_date,
-                              "source": f"关键词：{name}"})
+            if not (title and link):
+                continue
+            if not is_recent_enough(pub_date):
+                skipped_old += 1
+                continue
+            items.append({"title": title, "link": link, "pub_date": pub_date,
+                          "source": f"关键词：{name}"})
+        if skipped_old:
+            print(f"「{name}」过滤掉 {skipped_old} 条超过{RECENT_DAYS}天的旧内容")
     except Exception as e:
         print(f"[警告] 抓取关键词「{name}」失败：{e}")
     return items
@@ -106,7 +164,10 @@ def fetch_official_page(name, url):
             if full_link in seen:
                 continue
             seen.add(full_link)
-            items.append({"title": text, "link": full_link, "pub_date": "",
+            found_date = extract_nearby_date(a)
+            if found_date and not is_recent_enough(found_date):
+                continue  # 找到日期但太老了，跳过
+            items.append({"title": text, "link": full_link, "pub_date": found_date,
                           "source": f"官网：{name}"})
     except Exception as e:
         print(f"[警告] 抓取官网「{name}」失败：{e}")
@@ -158,6 +219,15 @@ def main():
             existing_ids.add(item_id)
             new_count += 1
 
+    # 已经存进data.json的老数据，如果知道真实发布日期且已经超过时效窗口，也清理掉
+    # （不知道发布日期的保留，毕竟没法判断它到底是不是真的过时了）
+    before_prune = len(data["items"])
+    data["items"] = [
+        it for it in data["items"]
+        if not it.get("pub_date") or is_recent_enough(it["pub_date"])
+    ]
+    pruned_count = before_prune - len(data["items"])
+
     # 只保留最近800条，避免数据无限增长
     data["items"] = sorted(data["items"], key=lambda x: x.get("first_seen", ""), reverse=True)[:800]
     data["last_run"] = now
@@ -165,7 +235,7 @@ def main():
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"本次运行完成，新增 {new_count} 条内容，共 {len(data['items'])} 条。")
+    print(f"本次运行完成，新增 {new_count} 条内容，清理 {pruned_count} 条过期旧内容，共 {len(data['items'])} 条。")
 
 
 if __name__ == "__main__":
