@@ -112,5 +112,49 @@ elif action == "停用官网":
     else:
         print(f'没有找到名叫「{name}」的官网。')
 
+elif action == "添加展会门户":
+    if not name or not value:
+        print('添加展会门户需要同时填写"名称"和"网址"这两栏，本次没有做任何修改。')
+        sys.exit(0)
+    config.setdefault("exhibition_portals", [])
+    idx = find_index(config["exhibition_portals"], name)
+    if idx >= 0:
+        print(f'展会门户「{name}」已经存在，没有重复添加。')
+    else:
+        url = value if value.startswith("http") else "https://" + value
+        config["exhibition_portals"].append({"name": name, "url": url, "enabled": True})
+        save()
+        print(f'已添加展会门户「{name}」（网址：{url}）')
+
+elif action == "删除展会门户":
+    config.setdefault("exhibition_portals", [])
+    idx = find_index(config["exhibition_portals"], name)
+    if idx >= 0:
+        config["exhibition_portals"].pop(idx)
+        save()
+        print(f'已删除展会门户「{name}」')
+    else:
+        print(f'没有找到名叫「{name}」的展会门户。')
+
+elif action == "启用展会门户":
+    config.setdefault("exhibition_portals", [])
+    idx = find_index(config["exhibition_portals"], name)
+    if idx >= 0:
+        config["exhibition_portals"][idx]["enabled"] = True
+        save()
+        print(f'已启用展会门户「{name}」')
+    else:
+        print(f'没有找到名叫「{name}」的展会门户。')
+
+elif action == "停用展会门户":
+    config.setdefault("exhibition_portals", [])
+    idx = find_index(config["exhibition_portals"], name)
+    if idx >= 0:
+        config["exhibition_portals"][idx]["enabled"] = False
+        save()
+        print(f'已停用展会门户「{name}」')
+    else:
+        print(f'没有找到名叫「{name}」的展会门户。')
+
 else:
     print(f'不认识的操作类型："{action}"，没有做任何修改。')
