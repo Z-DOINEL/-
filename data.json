@@ -1468,6 +1468,15 @@
       "first_seen": "2026-07-18T15:32+00:00"
     },
     {
+      "id": "5acddfeb4d940649d8d1d89a5570faa5",
+      "title": "2026郑州全国药品保健及医疗用品交易会",
+      "link": "http://www.eshow365.com/zhanhui/html/200088_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-13",
+      "summary": "",
+      "first_seen": "2026-07-21T17:00+00:00"
+    },
+    {
       "id": "a9b28b5ac70d98651d2e9840f3e9e856",
       "title": "2026第二十三届中国国际化工展览会(ICIF China 2026)",
       "link": "http://www.eshow365.com/zhanhui/html/194832_0.html",
@@ -1529,6 +1538,15 @@
       "pub_date": "2026-09-16",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "d601589eb342cb70b5046af5366e8378",
+      "title": "2026第38届中原畜牧业交易博览会（河南家禽交",
+      "link": "http://www.eshow365.com/zhanhui/html/195569_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-16",
+      "summary": "",
+      "first_seen": "2026-07-21T17:00+00:00"
     },
     {
       "id": "be31e9bbaa6aaf2f266129736295c0c7",
@@ -1745,6 +1763,15 @@
       "pub_date": "2026-10-16",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "fa74e25fdc2151ad37767c293071b32a",
+      "title": "2026海名第11届中原宠物展暨潮宠嘉年华（海名",
+      "link": "http://www.eshow365.com/zhanhui/html/195545_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-10-16",
+      "summary": "",
+      "first_seen": "2026-07-21T17:00+00:00"
     },
     {
       "id": "30de9bff02a6b6514c5f032372397dc4",
@@ -2332,6 +2359,24 @@
       "first_seen": "2026-07-18T15:32+00:00"
     },
     {
+      "id": "eeebac13dd6c2919968e0b5a4cc3b799",
+      "title": "2027中国西部（重庆）连接器、线缆线束及加工",
+      "link": "http://www.eshow365.com/zhanhui/html/202415_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-04-10",
+      "summary": "",
+      "first_seen": "2026-07-21T17:00+00:00"
+    },
+    {
+      "id": "5c70e544a32c37c39ab7351bfc2c50c5",
+      "title": "2027中国西部·（重庆）智慧电力及电气设备展",
+      "link": "http://www.eshow365.com/zhanhui/html/202416_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-04-10",
+      "summary": "",
+      "first_seen": "2026-07-21T17:00+00:00"
+    },
+    {
       "id": "ec9207847fbb9ad75181d6d9c0cafa92",
       "title": "2027第二十六届中国成都建筑及装饰材料博览会",
       "link": "http://www.eshow365.com/zhanhui/html/200224_0.html",
@@ -2395,5 +2440,5 @@
       "first_seen": "2026-07-17T08:47+00:00"
     }
   ],
-  "last_run": "2026-07-21T09:20+00:00"
+  "last_run": "2026-07-21T17:00+00:00"
 }
