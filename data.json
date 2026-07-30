@@ -370,6 +370,15 @@
       "first_seen": "2026-07-27T12:39+00:00"
     },
     {
+      "id": "15c4064e77c7c9d900bfa405abe2ab44",
+      "title": "2026第三十一届中国天津投资贸易洽谈会",
+      "link": "http://www.eshow365.com/zhanhui/html/204466_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-07-30T17:09+00:00"
+    },
+    {
       "id": "41572cdb2215ab17f22b5a3257d72655",
       "title": "2026第23届中国国际数码互动娱乐展览会（China Joy）",
       "link": "http://www.eshow365.com/zhanhui/html/194980_0.html",
@@ -613,6 +622,15 @@
       "first_seen": "2026-07-29T10:14+00:00"
     },
     {
+      "id": "d6e8a109381021914269c6455601b459",
+      "title": "2026第六届内蒙古餐饮食材展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/200182_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-07",
+      "summary": "",
+      "first_seen": "2026-07-30T17:09+00:00"
+    },
+    {
       "id": "5bb5af05c92cc39387cabfe44cd8745a",
       "title": "2026WRC世界机器人大会暨博览会",
       "link": "http://www.eshow365.com/zhanhui/html/193492_0.html",
@@ -647,6 +665,15 @@
       "pub_date": "2026-08-08",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "da2f365fa4bb086a9223f95a77a7798f",
+      "title": "2026第四届云南国际餐饮美食暨预制菜产业博览",
+      "link": "http://www.eshow365.com/zhanhui/html/200241_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-08",
+      "summary": "",
+      "first_seen": "2026-07-30T17:09+00:00"
     },
     {
       "id": "72280a0be9e32aa4e62e6131b446c990",
@@ -728,6 +755,15 @@
       "pub_date": "2026-08-14",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "dce032554f561985342f5d7560b296a1",
+      "title": "富众GFE2026第51届广州国际餐饮加盟展、广州",
+      "link": "http://www.eshow365.com/zhanhui/html/204483_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-14",
+      "summary": "",
+      "first_seen": "2026-07-30T17:09+00:00"
     },
     {
       "id": "96e12d565efb525899baa52829fd05aa",
@@ -989,6 +1025,15 @@
       "pub_date": "2026-08-25",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "2f6d947c6475921fd3b4fd5d9dd05124",
+      "title": "2026CHIC中国国际服装服饰博览会（秋季）",
+      "link": "http://www.eshow365.com/zhanhui/html/199913_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-25",
+      "summary": "",
+      "first_seen": "2026-07-30T17:09+00:00"
     },
     {
       "id": "8387b73d24b3e8bf2a199e53658e81db",
@@ -2449,5 +2494,5 @@
       "first_seen": "2026-07-17T08:47+00:00"
     }
   ],
-  "last_run": "2026-07-30T09:36+00:00"
+  "last_run": "2026-07-30T17:09+00:00"
 }
