@@ -415,15 +415,6 @@
       "first_seen": "2026-07-31T10:04+00:00"
     },
     {
-      "id": "8e2d20a0144a76ea4a73479725b37d92",
-      "title": "2026第三十九届内蒙古国际农业博览会暨肥料、",
-      "link": "http://www.eshow365.com/zhanhui/html/200368_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-08-02",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
       "id": "ef94a689599e8eca43830ffcbf22e551",
       "title": "2026第23届中国国际数码互动娱乐展览会（Chi",
       "link": "http://www.eshow365.com/zhanhui/html/194980_0.html",
@@ -503,6 +494,24 @@
       "pub_date": "2026-08-05",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "11af0c2e99cd64b518a952fd7b341f58",
+      "title": "2026第二十三届国际粉体、散料、流体加工展览",
+      "link": "http://www.eshow365.com/zhanhui/html/205510_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-05T10:06+00:00"
+    },
+    {
+      "id": "49308ce3073e21e726165d7d051f9352",
+      "title": "2026第22届中国（宁波）国际家电博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/205511_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-05T10:06+00:00"
     },
     {
       "id": "7285aaef7b8d9b8d406b3591ab26fb5f",
@@ -1178,6 +1187,15 @@
       "pub_date": "2026-08-28",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "5ee6cdd3c9d0506ba266317a83115eca",
+      "title": "2026第七届疗愈博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/204509_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-28",
+      "summary": "",
+      "first_seen": "2026-08-05T10:06+00:00"
     },
     {
       "id": "8771374eedd8a9c7c65449e0917ab063",
@@ -2575,5 +2593,5 @@
       "first_seen": "2026-07-17T08:47+00:00"
     }
   ],
-  "last_run": "2026-08-04T18:13+00:00"
+  "last_run": "2026-08-05T10:06+00:00"
 }
