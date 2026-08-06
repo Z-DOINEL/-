@@ -532,6 +532,15 @@
       "first_seen": "2026-07-18T15:32+00:00"
     },
     {
+      "id": "f16689b14bb586c0a41ef98bcf3d03fb",
+      "title": "2026中国新疆第十一届种子展示交易会",
+      "link": "http://www.eshow365.com/zhanhui/html/195672_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-06T10:14+00:00"
+    },
+    {
       "id": "d7ac3a5b2bada5fb79191f8dbf259125",
       "title": "2026第67届中国特许加盟展（上海站）",
       "link": "http://www.eshow365.com/zhanhui/html/194951_0.html",
@@ -1124,6 +1133,15 @@
       "pub_date": "2026-08-26",
       "summary": "",
       "first_seen": "2026-07-31T10:04+00:00"
+    },
+    {
+      "id": "f28b53affdf6870634e78240de7cb1bf",
+      "title": "2026第二十届上海国际渔业博览会（WorldSeaf",
+      "link": "http://www.eshow365.com/zhanhui/html/194827_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-26",
+      "summary": "",
+      "first_seen": "2026-08-06T10:14+00:00"
     },
     {
       "id": "d82383a973dbf5891f933f14fccd075a",
@@ -2593,5 +2611,5 @@
       "first_seen": "2026-07-17T08:47+00:00"
     }
   ],
-  "last_run": "2026-08-05T17:13+00:00"
+  "last_run": "2026-08-06T10:14+00:00"
 }
