@@ -442,51 +442,6 @@
       "first_seen": "2026-08-04T10:15+00:00"
     },
     {
-      "id": "c8a85728ad69a8d4489925afcbd8ae5b",
-      "title": "2026 APES上海国际汽配展",
-      "link": "http://www.eshow365.com/zhanhui/html/199932_0.html",
-      "source": "展会门户：E展网-上海",
-      "pub_date": "2026-08-05",
-      "summary": "",
-      "first_seen": "2026-07-17T08:47+00:00"
-    },
-    {
-      "id": "12268d862814b7bdbed59792da5ea4d2",
-      "title": "2026第28届上海国际别墅配套设施博览会（上海",
-      "link": "http://www.eshow365.com/zhanhui/html/193343_0.html",
-      "source": "展会门户：E展网-上海",
-      "pub_date": "2026-08-05",
-      "summary": "",
-      "first_seen": "2026-07-17T08:47+00:00"
-    },
-    {
-      "id": "c5dd9d0f79a7b5c5f67a1518230020d8",
-      "title": "2026第21届国际绿色建筑建材（上海）博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/193342_0.html",
-      "source": "展会门户：E展网-上海",
-      "pub_date": "2026-08-05",
-      "summary": "",
-      "first_seen": "2026-07-17T08:47+00:00"
-    },
-    {
-      "id": "932c06cb8a462a067d9836df7a2f10da",
-      "title": "2026第三届北京国际充电桩及换电站展览会",
-      "link": "http://www.eshow365.com/zhanhui/html/195343_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-08-05",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "26c0cee957e6fc69217f8fd95e6c66b0",
-      "title": "2026第28届上海国际别墅配套设施博览会（上海别墅展）",
-      "link": "http://www.eshow365.com/zhanhui/html/193343_0.html",
-      "source": "展会门户：E展网-上海",
-      "pub_date": "2026-08-05",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
       "id": "11af0c2e99cd64b518a952fd7b341f58",
       "title": "2026第二十三届国际粉体、散料、流体加工展览",
       "link": "http://www.eshow365.com/zhanhui/html/205510_0.html",
@@ -631,6 +586,15 @@
       "first_seen": "2026-08-02T15:47+00:00"
     },
     {
+      "id": "a8f7d9df0e6a64bb774dc8d64ab77035",
+      "title": "2026第二十八届哈尔滨国际汽车工业展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/195426_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
+    },
+    {
       "id": "72280a0be9e32aa4e62e6131b446c990",
       "title": "2026第二十一届上海国际汽车内饰与外饰展览会",
       "link": "http://www.eshow365.com/zhanhui/html/193551_0.html",
@@ -703,6 +667,15 @@
       "first_seen": "2026-07-18T15:32+00:00"
     },
     {
+      "id": "652d424a2a141487c1ba7015cd1b3592",
+      "title": "2026(第十五届)中国西部(兰州)国际汽车博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/200267_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-13",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
+    },
+    {
       "id": "8891732c6dc6acf00c394bc434c3a8da",
       "title": "2026深圳国际健身展暨运动用品外贸出口与跨境",
       "link": "http://www.eshow365.com/zhanhui/html/199802_0.html",
@@ -730,6 +703,33 @@
       "first_seen": "2026-07-30T17:09+00:00"
     },
     {
+      "id": "22d567a00a7a4d062b13dca33629cfa0",
+      "title": "2026第十六届新疆喀什·中亚南亚商品交易会",
+      "link": "http://www.eshow365.com/zhanhui/html/195674_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-14",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
+    },
+    {
+      "id": "12129ebc7b26c02ffa5e3dfecf196f4d",
+      "title": "2026新疆粮油食品产业博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/194652_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-14",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
+    },
+    {
+      "id": "79e5bd68aef63f8ed60a42bbf36dc23d",
+      "title": "2026新疆坚果炒货及林果业加工机械与包装展览",
+      "link": "http://www.eshow365.com/zhanhui/html/193554_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-14",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
+    },
+    {
       "id": "96e12d565efb525899baa52829fd05aa",
       "title": "2026山东临沂食品博览会 暨农产品供应链峰会",
       "link": "http://www.eshow365.com/zhanhui/html/200317_0.html",
@@ -737,6 +737,15 @@
       "pub_date": "2026-08-15",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "6f66e94ebb1fd7b77693e2b60b9a3443",
+      "title": "2026第22届哈尔滨国际家具展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/200365_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-15",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
     },
     {
       "id": "e61c3133a21644e58daacb587c6a9f7c",
@@ -1576,6 +1585,15 @@
       "first_seen": "2026-07-18T15:32+00:00"
     },
     {
+      "id": "345bc4874bd848442d08444bf6678e62",
+      "title": "2026广州国际礼品及文创产品展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/194584_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-11",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
+    },
+    {
       "id": "2f716516a60a7a30242341c51cd7485f",
       "title": "2026第二十四届中国国际肉类工业展览会",
       "link": "http://www.eshow365.com/zhanhui/html/199764_0.html",
@@ -1718,6 +1736,15 @@
       "pub_date": "2026-09-21",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "ee5ab91e944baeea03e06e29b2f6ffd1",
+      "title": "2026第二届激光制造与增材制造创新发展大会暨",
+      "link": "http://www.eshow365.com/zhanhui/html/195623_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-21",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
     },
     {
       "id": "f904ed7817a43e9ab890c0e81d420ed4",
@@ -2170,6 +2197,15 @@
       "first_seen": "2026-07-29T10:14+00:00"
     },
     {
+      "id": "46e5fa4b460445a7071c15202aba1621",
+      "title": "2026中国（中部）印刷包装博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/195570_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-06",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
+    },
+    {
       "id": "f3c9e55ae705084cd977180b9b52601d",
       "title": "2026第二十九届上海国际食品饮料及餐饮设备展览会（FHC",
       "link": "http://www.eshow365.com/zhanhui/html/195524_0.html",
@@ -2267,6 +2303,15 @@
       "pub_date": "2026-11-11",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "9e8838689b680c132943dad6d17df7ea",
+      "title": "2026第十八届郑州国际汽车展览会暨新能源·智",
+      "link": "http://www.eshow365.com/zhanhui/html/195146_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-12",
+      "summary": "",
+      "first_seen": "2026-08-08T04:17+00:00"
     },
     {
       "id": "4c87b32ce3d0077d5029b38cff4a8c2a",
@@ -2629,5 +2674,5 @@
       "first_seen": "2026-07-17T08:47+00:00"
     }
   ],
-  "last_run": "2026-08-07T15:10+00:00"
+  "last_run": "2026-08-08T04:17+00:00"
 }
