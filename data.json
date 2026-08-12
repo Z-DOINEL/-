@@ -622,6 +622,51 @@
       "first_seen": "2026-08-11T15:30+00:00"
     },
     {
+      "id": "192aa974fa288a11381b933cede2b357",
+      "title": "2026第31届大连国际汽车展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/208558_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-12T05:44+00:00"
+    },
+    {
+      "id": "798353e38f7ea2490a949ba59f192149",
+      "title": "2026亚洲混凝土世界博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/208563_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-12T05:44+00:00"
+    },
+    {
+      "id": "6677738de0570e8e4ba6d24a125026f2",
+      "title": "2026第四届中国具身智能机器人产业大会暨展览",
+      "link": "http://www.eshow365.com/zhanhui/html/208559_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-12T05:44+00:00"
+    },
+    {
+      "id": "02c50097ef6a46e43d0b6771d3b745f3",
+      "title": "2026第十一届上海国际汽车创新技术周",
+      "link": "http://www.eshow365.com/zhanhui/html/208561_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-12T05:44+00:00"
+    },
+    {
+      "id": "f9f348d49f8f6acf5cf213bcb6799617",
+      "title": "2026MBE第五届亚洲金属建筑博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/208560_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-12T05:44+00:00"
+    },
+    {
       "id": "5cb9557261738f3ee6831f40009bdea4",
       "title": "2026第五十四届中国北京国际礼品、赠品及家庭",
       "link": "http://www.eshow365.com/zhanhui/html/199820_0.html",
@@ -1216,6 +1261,15 @@
       "first_seen": "2026-08-09T04:45+00:00"
     },
     {
+      "id": "a2b49a826d28ace5f58f24037bd9501d",
+      "title": "2026第6届上海国际茶产业博览会（华巨臣茶博",
+      "link": "http://www.eshow365.com/zhanhui/html/200206_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-08-27",
+      "summary": "",
+      "first_seen": "2026-08-12T05:44+00:00"
+    },
+    {
       "id": "62e264a92e58d8622d1c15fef9f55bb9",
       "title": "2026北京(秋季)国际璀璨珠宝首饰展览会（海名",
       "link": "http://www.eshow365.com/zhanhui/html/200163_0.html",
@@ -1709,6 +1763,15 @@
       "pub_date": "2026-09-15",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "3ce9ae4ec47ca42e8cfc63ce6af72c4f",
+      "title": "Worlddidac Asia2026第十二届亚洲教育装备博",
+      "link": "http://www.eshow365.com/zhanhui/html/196703_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-15",
+      "summary": "",
+      "first_seen": "2026-08-12T05:44+00:00"
     },
     {
       "id": "45f3ec3a3016465d318437e6ea557f6d",
@@ -2809,5 +2872,5 @@
       "first_seen": "2026-07-17T08:47+00:00"
     }
   ],
-  "last_run": "2026-08-11T15:30+00:00"
+  "last_run": "2026-08-12T05:44+00:00"
 }
