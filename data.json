@@ -613,60 +613,6 @@
       "first_seen": "2026-08-13T05:50+00:00"
     },
     {
-      "id": "8891732c6dc6acf00c394bc434c3a8da",
-      "title": "2026深圳国际健身展暨运动用品外贸出口与跨境",
-      "link": "http://www.eshow365.com/zhanhui/html/199802_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-08-14",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "6f6424775718c0541145c61310ffd831",
-      "title": "2026吉浙冰雪产业全产业链博览交易会",
-      "link": "http://www.eshow365.com/zhanhui/html/200078_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-08-14",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "dce032554f561985342f5d7560b296a1",
-      "title": "富众GFE2026第51届广州国际餐饮加盟展、广州",
-      "link": "http://www.eshow365.com/zhanhui/html/204483_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-08-14",
-      "summary": "",
-      "first_seen": "2026-07-30T17:09+00:00"
-    },
-    {
-      "id": "22d567a00a7a4d062b13dca33629cfa0",
-      "title": "2026第十六届新疆喀什·中亚南亚商品交易会",
-      "link": "http://www.eshow365.com/zhanhui/html/195674_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-08-14",
-      "summary": "",
-      "first_seen": "2026-08-08T04:17+00:00"
-    },
-    {
-      "id": "12129ebc7b26c02ffa5e3dfecf196f4d",
-      "title": "2026新疆粮油食品产业博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/194652_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-08-14",
-      "summary": "",
-      "first_seen": "2026-08-08T04:17+00:00"
-    },
-    {
-      "id": "79e5bd68aef63f8ed60a42bbf36dc23d",
-      "title": "2026新疆坚果炒货及林果业加工机械与包装展览",
-      "link": "http://www.eshow365.com/zhanhui/html/193554_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-08-14",
-      "summary": "",
-      "first_seen": "2026-08-08T04:17+00:00"
-    },
-    {
       "id": "96e12d565efb525899baa52829fd05aa",
       "title": "2026山东临沂食品博览会 暨农产品供应链峰会",
       "link": "http://www.eshow365.com/zhanhui/html/200317_0.html",
@@ -692,6 +638,15 @@
       "pub_date": "2026-08-15",
       "summary": "",
       "first_seen": "2026-08-11T15:30+00:00"
+    },
+    {
+      "id": "c076f8519c97af67512d30e17bb86d0f",
+      "title": "2026第二十四届烟台国际装备制造业博览会（J",
+      "link": "http://www.eshow365.com/zhanhui/html/195173_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-17T00:53+00:00"
     },
     {
       "id": "e61c3133a21644e58daacb587c6a9f7c",
@@ -2899,5 +2854,5 @@
       "first_seen": "2026-07-17T08:47+00:00"
     }
   ],
-  "last_run": "2026-08-16T12:26+00:00"
+  "last_run": "2026-08-17T00:53+00:00"
 }
