@@ -649,6 +649,24 @@
       "first_seen": "2026-08-17T00:53+00:00"
     },
     {
+      "id": "652d424a2a141487c1ba7015cd1b3592",
+      "title": "2026(第十五届)中国西部(兰州)国际汽车博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/200267_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-17T12:31+00:00"
+    },
+    {
+      "id": "22d567a00a7a4d062b13dca33629cfa0",
+      "title": "2026第十六届新疆喀什·中亚南亚商品交易会",
+      "link": "http://www.eshow365.com/zhanhui/html/195674_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-08-17T12:31+00:00"
+    },
+    {
       "id": "e61c3133a21644e58daacb587c6a9f7c",
       "title": "2026中国国际家用纺织品及辅料（秋冬）博览会",
       "link": "http://www.eshow365.com/zhanhui/html/199921_0.html",
@@ -1774,6 +1792,15 @@
       "first_seen": "2026-07-22T17:00+00:00"
     },
     {
+      "id": "d7e988cf8d64498ee44220b0575f3438",
+      "title": "2026义乌国际照明展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/160901_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-18",
+      "summary": "",
+      "first_seen": "2026-08-17T12:31+00:00"
+    },
+    {
       "id": "998e68db7c334c0f54dd09a4c7e4fae5",
       "title": "2026第二十四届中国国际摩托车博览会",
       "link": "http://www.eshow365.com/zhanhui/html/194804_0.html",
@@ -1817,6 +1844,15 @@
       "pub_date": "2026-09-21",
       "summary": "",
       "first_seen": "2026-08-08T04:17+00:00"
+    },
+    {
+      "id": "a950221f7acc05b643c1de0ea19e0d88",
+      "title": "2026 CHPE第九届（杭州）国际时尚发制品博览",
+      "link": "http://www.eshow365.com/zhanhui/html/202418_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-21",
+      "summary": "",
+      "first_seen": "2026-08-17T12:31+00:00"
     },
     {
       "id": "f904ed7817a43e9ab890c0e81d420ed4",
@@ -2123,6 +2159,15 @@
       "pub_date": "2026-10-22",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "6874fe357dfbf79bd0dfc4a7c149c0db",
+      "title": "2026第35届中国 · 古镇国际灯饰博览会（秋季",
+      "link": "http://www.eshow365.com/zhanhui/html/208585_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-10-22",
+      "summary": "",
+      "first_seen": "2026-08-17T12:31+00:00"
     },
     {
       "id": "a9a6652c4f265a45cea28f7ef17c0fef",
@@ -2854,5 +2899,5 @@
       "first_seen": "2026-07-17T08:47+00:00"
     }
   ],
-  "last_run": "2026-08-17T00:53+00:00"
+  "last_run": "2026-08-17T12:31+00:00"
 }
