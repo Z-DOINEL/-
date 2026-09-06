@@ -784,69 +784,6 @@
       "first_seen": "2026-08-31T18:36+00:00"
     },
     {
-      "id": "c3f3c313bb09f2ac92ebce1e4c454522",
-      "title": "2026SIAL西雅国际食品展（广州）",
-      "link": "http://www.eshow365.com/zhanhui/html/194730_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-03",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "e2a1301adbb5dcc4dae7b4191b569f0f",
-      "title": "2026NME宁波国际机床展（华机展）",
-      "link": "http://www.eshow365.com/zhanhui/html/197710_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-03",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "c20fecf17975d5a66b74a74f26ae3c57",
-      "title": "2026第六届中国（温州）汽摩配产业博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/195290_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-03",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "37af07efcaf5a31b74d1a74d1950da29",
-      "title": "2026第四届山东国际大健康产业博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/195190_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-03",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "1697cfe06df96ac2bed378d0fb3f4951",
-      "title": "2026第12届海名济南餐饮供应链博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/195107_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-03",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "84e8327b0637fb92af79ec6e17cf5196",
-      "title": "2026第十届遵义国际汽车展览会暨新能源·智能",
-      "link": "http://www.eshow365.com/zhanhui/html/195143_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-03",
-      "summary": "",
-      "first_seen": "2026-08-27T21:35+00:00"
-    },
-    {
-      "id": "8921e8d4b5737c78d0974afb40cea80f",
-      "title": "2026丝路新疆石油及化工工业博览会(CACPE)",
-      "link": "http://www.eshow365.com/zhanhui/html/194796_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-03",
-      "summary": "",
-      "first_seen": "2026-08-28T08:31+00:00"
-    },
-    {
       "id": "bead9b075bd9df04f75da9fb802ab0e3",
       "title": "2026第7届艺术上海国际博览会",
       "link": "http://www.eshow365.com/zhanhui/html/199790_0.html",
@@ -1000,6 +937,15 @@
       "first_seen": "2026-09-04T02:27+00:00"
     },
     {
+      "id": "950f36eeda5f6be304d99c406f9401f1",
+      "title": "2026第58届中国（上海）国际家具博览会（",
+      "link": "http://www.eshow365.com/zhanhui/html/194837_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-05",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
       "id": "dbce56d1518479bd7a449fe86fd788a9",
       "title": "2026浙江(义乌)包装印刷展览会",
       "link": "http://www.eshow365.com/zhanhui/html/196702_0.html",
@@ -1007,6 +953,51 @@
       "pub_date": "2026-09-06",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "f26028e82c1b8cb5b9475e68a7788a73",
+      "title": "2026第十二届上海国际城市与建筑博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/199780_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "1770449e6934d8eedcdaddfe26cf747c",
+      "title": "2027SIA第二十五届中国智能工厂展览",
+      "link": "http://www.eshow365.com/zhanhui/html/200287_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "7fdd4824e2fc3cbb829f5adb8d982cf8",
+      "title": "2027第二十九届上海国际礼品、文创产品",
+      "link": "http://www.eshow365.com/zhanhui/html/200319_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "6bbe49c751aa712a3005f34e3c4041d3",
+      "title": "2026第二十九届中国国际口腔器材展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/194845_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "0221b761d34a89a9548b3824bdd3777c",
+      "title": "2026全球消费电子展暨国际消费电子及家",
+      "link": "http://www.eshow365.com/zhanhui/html/208653_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "37cb23b715d24e017db793570043786e",
@@ -1043,6 +1034,15 @@
       "pub_date": "2026-09-07",
       "summary": "",
       "first_seen": "2026-09-04T02:27+00:00"
+    },
+    {
+      "id": "08af71609703d6d86e1800fa0abe42c3",
+      "title": "2026摩登上海设计周暨摩登上海时尚家居展（MAISON）",
+      "link": "http://www.eshow365.com/zhanhui/html/194829_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-07",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "5177524bd34be2035c04c2fadc1f70b1",
@@ -1115,6 +1115,15 @@
       "pub_date": "2026-09-09",
       "summary": "",
       "first_seen": "2026-07-18T15:32+00:00"
+    },
+    {
+      "id": "1a3cabda3915a3c781661f7d67c8277d",
+      "title": "2026长春第三届国际医药健康及养生养老产业博",
+      "link": "http://www.eshow365.com/zhanhui/html/199804_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-09",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "f313599538e4d031aa2920446ff3e953",
@@ -1205,6 +1214,15 @@
       "pub_date": "2026-09-10",
       "summary": "",
       "first_seen": "2026-08-07T05:53+00:00"
+    },
+    {
+      "id": "679696f82619a8d12da592bfdfb25ffc",
+      "title": "2026中国(石家庄)国际汽车工业展览会（联合车",
+      "link": "http://www.eshow365.com/zhanhui/html/200269_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-10",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "e3fbe4fd7be4860fffdec4af855b3f8d",
@@ -1358,6 +1376,33 @@
       "pub_date": "2026-09-15",
       "summary": "",
       "first_seen": "2026-09-02T15:49+00:00"
+    },
+    {
+      "id": "3598685a58ee52bcde4c5d2e83b36491",
+      "title": "2026第28届上海国际广告展 上海国际LED展 上海国际数字",
+      "link": "http://www.eshow365.com/zhanhui/html/194600_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-15",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "959c12580c236cf555b723c5907dae4f",
+      "title": "2026第二十九届中国国际胶粘剂及密封剂展览会（ASE CHI",
+      "link": "http://www.eshow365.com/zhanhui/html/194630_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-15",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "5c2e06ef3432681bb5cb5b9cd05ae1af",
+      "title": "2026第26届上海国际LED智显新科技秋交会（LED CHINA）",
+      "link": "http://www.eshow365.com/zhanhui/html/194834_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-15",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "45f3ec3a3016465d318437e6ea557f6d",
@@ -1610,6 +1655,42 @@
       "pub_date": "2026-09-21",
       "summary": "",
       "first_seen": "2026-09-04T02:27+00:00"
+    },
+    {
+      "id": "dd8aad56dcf7b55afe1ff8e6ea569de8",
+      "title": "2026第十二届中国国际管材展览会（Tube China 2026）",
+      "link": "http://www.eshow365.com/zhanhui/html/185296_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-21",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "ea50a6d24b14af652005a9f307a1f392",
+      "title": "2026第十二届中国国际线缆及线材展览会（wire China ）",
+      "link": "http://www.eshow365.com/zhanhui/html/185999_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-21",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "9454d3246cff8346fb148487f9833f52",
+      "title": "2026第二十四届中国国际冶金工业展览会（Metallurgy Ch",
+      "link": "http://www.eshow365.com/zhanhui/html/195700_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-21",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "478b540334950771325bd034f60b3000",
+      "title": "2026中国国际洗染业展览会（国际纺织品洗涤、皮革护理、",
+      "link": "http://www.eshow365.com/zhanhui/html/199805_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-09-21",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "f904ed7817a43e9ab890c0e81d420ed4",
@@ -1999,6 +2080,15 @@
       "first_seen": "2026-08-27T21:35+00:00"
     },
     {
+      "id": "f31c61e4e05fbf18cb502495c1746801",
+      "title": "2026中国国际口腔设备器材博览会（CDS）与中华口腔医学",
+      "link": "http://www.eshow365.com/zhanhui/html/194841_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-10-13",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
       "id": "f0572eddc38563ca827f5cdef546475f",
       "title": "2026华南3D打印、增材制造展览会（TCT Shenz",
       "link": "http://www.eshow365.com/zhanhui/html/199915_0.html",
@@ -2042,6 +2132,24 @@
       "pub_date": "2026-10-15",
       "summary": "",
       "first_seen": "2026-09-04T02:27+00:00"
+    },
+    {
+      "id": "c419a34b59a5667472b3ed9ce5b5d16a",
+      "title": "CCLE 2026第十一届中国教育后勤展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/204472_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-10-15",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
+      "id": "7618cdf49ff34565a8ec90be57fdcd9b",
+      "title": "2026中国民用航空维修智造展览会（上海MRO展）",
+      "link": "http://www.eshow365.com/zhanhui/html/200226_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-10-15",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "f67a6c37bd447b8f416e6b28127727b6",
@@ -2170,6 +2278,15 @@
       "first_seen": "2026-08-28T08:31+00:00"
     },
     {
+      "id": "3190de3aaa0f738a353d7852e05a45d9",
+      "title": "2026第十三届中国（上海）国际流体机械展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/185969_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-10-21",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
       "id": "9e50547dd000d9eeaf0494952cbd4fad",
       "title": "2026第二十九届中国国际口腔器材展览会暨学术研",
       "link": "http://www.eshow365.com/zhanhui/html/194845_0.html",
@@ -2231,6 +2348,15 @@
       "pub_date": "2026-10-23",
       "summary": "",
       "first_seen": "2026-08-27T21:35+00:00"
+    },
+    {
+      "id": "cb1952283c3ae2e7fa6f2440378cb369",
+      "title": "2026中国济南国际宠物供应链展览会（思创·宠",
+      "link": "http://www.eshow365.com/zhanhui/html/195639_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-10-23",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "2e1267e1896aa39935ed7309f88aafd9",
@@ -2593,6 +2719,15 @@
       "first_seen": "2026-08-13T05:50+00:00"
     },
     {
+      "id": "78146709d43760b2d1db7944d0eef27b",
+      "title": "2026第七届长三角国际文化产业博览会（长三",
+      "link": "http://www.eshow365.com/zhanhui/html/191100_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-11-19",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
       "id": "f3d4daea15af01438463692398fbd8dc",
       "title": "2026鸿威·世界宠物博览会（GWPF世宠会）十城",
       "link": "http://www.eshow365.com/zhanhui/html/200351_0.html",
@@ -2800,6 +2935,15 @@
       "first_seen": "2026-07-18T15:32+00:00"
     },
     {
+      "id": "c712101afc62823e997fbe75c003cac2",
+      "title": "2026上海国际发泡材料技术工业展览会（Inte",
+      "link": "http://www.eshow365.com/zhanhui/html/208564_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2026-12-09",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
       "id": "b5761ad22c60fbb529f0b6b0b8f59636",
       "title": "2027亚太（上海）宠物水族交易会(PSC宠交会",
       "link": "http://www.eshow365.com/zhanhui/html/199799_0.html",
@@ -2834,6 +2978,15 @@
       "pub_date": "2027-03-02",
       "summary": "",
       "first_seen": "2026-08-10T15:32+00:00"
+    },
+    {
+      "id": "c253467c3fe0fd694d59e7b7e61689c9",
+      "title": "2027中国国际纺织面料及辅料(春夏)博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/208644_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2027-03-10",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "a8b53324208402fd3aae431ce5afc08e",
@@ -2872,6 +3025,15 @@
       "first_seen": "2026-09-04T02:27+00:00"
     },
     {
+      "id": "9e625b335f7e675d194a811b1f4c6c74",
+      "title": "2027中国家电及消费电子博览会  中国家电博览会(AWE)",
+      "link": "http://www.eshow365.com/zhanhui/html/208572_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2027-03-17",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
       "id": "a833fa5555d592fa3dba16f60bdbb53f",
       "title": "2027第三十五届上海国际酒店工程设计与用品博览",
       "link": "http://www.eshow365.com/zhanhui/html/199810_0.html",
@@ -2879,6 +3041,15 @@
       "pub_date": "2027-03-30",
       "summary": "",
       "first_seen": "2026-07-17T08:47+00:00"
+    },
+    {
+      "id": "80711ce17fc1f8ac0d852df1c6a2fcf6",
+      "title": "2027第三十五届上海国际酒店工程设计与用品博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/199810_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2027-03-30",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     },
     {
       "id": "184e3eeb6346a2dbc5a6dd28b7e101ec",
@@ -2989,6 +3160,15 @@
       "first_seen": "2026-07-18T15:32+00:00"
     },
     {
+      "id": "8bee099a3f05a351424c6f05b09a26ed",
+      "title": "2027第12届CWIEME上海国际线圈展 第1",
+      "link": "http://www.eshow365.com/zhanhui/html/208672_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2027-06-23",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
+    },
+    {
       "id": "9146b65a545be54944877672c5b95b47",
       "title": "2027SIA第二十五届中国智能工厂展览会  2",
       "link": "http://www.eshow365.com/zhanhui/html/200287_0.html",
@@ -3014,7 +3194,16 @@
       "pub_date": "2027-11-17",
       "summary": "",
       "first_seen": "2026-07-17T08:47+00:00"
+    },
+    {
+      "id": "745e424a92d5696b6c93e13d9c11139e",
+      "title": "2027第23届中国国际海事技术学术会议和展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/207555_0.html",
+      "source": "展会门户：E展网-上海",
+      "pub_date": "2027-11-30",
+      "summary": "",
+      "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-09-05T14:23+00:00"
+  "last_run": "2026-09-06T02:25+00:00"
 }
