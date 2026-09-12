@@ -901,51 +901,6 @@
       "first_seen": "2026-09-08T15:49+00:00"
     },
     {
-      "id": "b58d7df18f8a6f92b4899ce5856d48c7",
-      "title": "2026中国国际服务贸易交易会 (服贸会 CIFTIS",
-      "link": "http://www.eshow365.com/zhanhui/html/194941_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-09",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "a59c93a610e3e233f974ebce0c3dfa53",
-      "title": "2026第八届深圳国际半导体技术展览会暨半导体",
-      "link": "http://www.eshow365.com/zhanhui/html/195079_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-09",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "658e6a2d43cd5578c72bd14615762463",
-      "title": "2026第二十七届中国国际光电博览会（CIOE中国",
-      "link": "http://www.eshow365.com/zhanhui/html/195080_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-09",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "b7cd87500c05caf1463f7516adc8ec6a",
-      "title": "2026成都国际石油石化技术装备展览会（成都石",
-      "link": "http://www.eshow365.com/zhanhui/html/193473_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-09",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "1a3cabda3915a3c781661f7d67c8277d",
-      "title": "2026长春第三届国际医药健康及养生养老产业博",
-      "link": "http://www.eshow365.com/zhanhui/html/199804_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-09-09",
-      "summary": "",
-      "first_seen": "2026-09-06T02:25+00:00"
-    },
-    {
       "id": "f313599538e4d031aa2920446ff3e953",
       "title": "2026第六届广州军民两用技术装备展览会",
       "link": "http://www.eshow365.com/zhanhui/html/184213_0.html",
@@ -1718,6 +1673,15 @@
       "pub_date": "2026-09-28",
       "summary": "",
       "first_seen": "2026-08-28T08:31+00:00"
+    },
+    {
+      "id": "6c1ba7de077a5ca9bb6e09d5b1eaaec1",
+      "title": "2026宁波国际户外用品博览会暨露营展",
+      "link": "http://www.eshow365.com/zhanhui/html/195288_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-09-28",
+      "summary": "",
+      "first_seen": "2026-09-12T02:39+00:00"
     },
     {
       "id": "d8dbcb6c945c80f829066ee51fc90055",
@@ -3079,6 +3043,15 @@
       "first_seen": "2026-09-06T02:25+00:00"
     },
     {
+      "id": "55a043f4d6d62edba9e7005c89dc82ac",
+      "title": "2026第三十二届广州酒店用品展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/210686_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-18",
+      "summary": "",
+      "first_seen": "2026-09-12T02:39+00:00"
+    },
+    {
       "id": "b5761ad22c60fbb529f0b6b0b8f59636",
       "title": "2027亚太（上海）宠物水族交易会(PSC宠交会",
       "link": "http://www.eshow365.com/zhanhui/html/199799_0.html",
@@ -3367,5 +3340,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-09-11T15:41+00:00"
+  "last_run": "2026-09-12T02:39+00:00"
 }
