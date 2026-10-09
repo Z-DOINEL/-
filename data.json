@@ -1207,6 +1207,15 @@
       "first_seen": "2026-08-19T12:33+00:00"
     },
     {
+      "id": "26d6e2981e298b4be8d7b421d259321b",
+      "title": "2026第五届中国（温州）国际泵阀展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/210816_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-10-09T04:06+00:00"
+    },
+    {
       "id": "f3658d375d19835f4313aeb6e9f405e6",
       "title": "2026第四届中国（青岛）国际制冷、空调、热泵",
       "link": "http://www.eshow365.com/zhanhui/html/199871_0.html",
@@ -2069,6 +2078,15 @@
       "pub_date": "2026-10-23",
       "summary": "",
       "first_seen": "2026-09-28T19:06+00:00"
+    },
+    {
+      "id": "03a9bbc41486136cae297f579bc02823",
+      "title": "2026第23届中国（玉环）国际机床展（华机展）",
+      "link": "http://www.eshow365.com/zhanhui/html/210815_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-10-23",
+      "summary": "",
+      "first_seen": "2026-10-09T04:06+00:00"
     },
     {
       "id": "2e1267e1896aa39935ed7309f88aafd9",
@@ -3079,6 +3097,15 @@
       "first_seen": "2026-08-10T15:32+00:00"
     },
     {
+      "id": "6f8e1c2c41e67631f1035ebfc7aa5e81",
+      "title": "2027第50届中原医疗器械(2027年春季)展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/210814_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-09",
+      "summary": "",
+      "first_seen": "2026-10-09T04:06+00:00"
+    },
+    {
       "id": "c253467c3fe0fd694d59e7b7e61689c9",
       "title": "2027中国国际纺织面料及辅料(春夏)博览会",
       "link": "http://www.eshow365.com/zhanhui/html/208644_0.html",
@@ -3475,5 +3502,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-10-08T18:18+00:00"
+  "last_run": "2026-10-09T04:06+00:00"
 }
