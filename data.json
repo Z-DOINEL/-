@@ -1198,33 +1198,6 @@
       "first_seen": "2026-10-09T17:51+00:00"
     },
     {
-      "id": "f0572eddc38563ca827f5cdef546475f",
-      "title": "2026华南3D打印、增材制造展览会（TCT Shenz",
-      "link": "http://www.eshow365.com/zhanhui/html/199915_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-14",
-      "summary": "",
-      "first_seen": "2026-08-27T21:35+00:00"
-    },
-    {
-      "id": "b0bca2acb9c663d94d9aa36b67b38528",
-      "title": "2026北京国际风能大会暨展览会（CWP2026）",
-      "link": "http://www.eshow365.com/zhanhui/html/194991_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-14",
-      "summary": "",
-      "first_seen": "2026-08-28T08:31+00:00"
-    },
-    {
-      "id": "cc78565e2e4e9b85db40059de39be0da",
-      "title": "2026长城·天津国际种业博览会 暨天津国际植",
-      "link": "http://www.eshow365.com/zhanhui/html/200361_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-14",
-      "summary": "",
-      "first_seen": "2026-10-11T03:25+00:00"
-    },
-    {
       "id": "b7ffa2bbb8ed720af1db39d2d91a21bc",
       "title": "2026年第115届全国糖酒商品交易会（CFDF）",
       "link": "http://www.eshow365.com/zhanhui/html/200027_0.html",
@@ -2035,6 +2008,15 @@
       "first_seen": "2026-10-12T20:44+00:00"
     },
     {
+      "id": "3873218bc47ab9c7f8c2c3a97515a112",
+      "title": "2026上海国际健康建筑环境博览会 暨2026绿色",
+      "link": "http://www.eshow365.com/zhanhui/html/199937_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-10-29",
+      "summary": "",
+      "first_seen": "2026-10-17T02:34+00:00"
+    },
+    {
       "id": "e6f387bd2d96225c8e51551fadbe5436",
       "title": "2026第88届中国教育装备展示会（长沙）（CEE",
       "link": "http://www.eshow365.com/zhanhui/html/199951_0.html",
@@ -2294,6 +2276,15 @@
       "pub_date": "2026-11-06",
       "summary": "",
       "first_seen": "2026-09-22T02:51+00:00"
+    },
+    {
+      "id": "97f1e469d1575fc6f50b81cab10a7b0a",
+      "title": "2026中国义乌文化用品秋季展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/195492_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-06",
+      "summary": "",
+      "first_seen": "2026-10-17T02:34+00:00"
     },
     {
       "id": "f3c9e55ae705084cd977180b9b52601d",
@@ -3106,6 +3097,15 @@
       "first_seen": "2026-10-07T18:18+00:00"
     },
     {
+      "id": "74efff62291a653baefc1bbc2b19fdec",
+      "title": "华滔·2027第三届郑州食品添加剂与配料博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/210878_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-05-10",
+      "summary": "",
+      "first_seen": "2026-10-17T02:34+00:00"
+    },
+    {
       "id": "c28ea6cc8224b4d70c1d999d2d9ee0f4",
       "title": "2027第十九届东西部小动物临床兽医师大会 暨",
       "link": "http://www.eshow365.com/zhanhui/html/207532_0.html",
@@ -3322,5 +3322,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-10-16T15:55+00:00"
+  "last_run": "2026-10-17T02:34+00:00"
 }
