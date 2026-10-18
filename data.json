@@ -1198,96 +1198,6 @@
       "first_seen": "2026-10-09T17:51+00:00"
     },
     {
-      "id": "b7ffa2bbb8ed720af1db39d2d91a21bc",
-      "title": "2026年第115届全国糖酒商品交易会（CFDF）",
-      "link": "http://www.eshow365.com/zhanhui/html/200027_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "c880c812a0b0ac9eab492c187c04d1ac",
-      "title": "2026年第115届全国糖酒商品交易会",
-      "link": "http://www.eshow365.com/zhanhui/html/200027_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-08-19T12:33+00:00"
-    },
-    {
-      "id": "21e17c900c5d58993f392797142aaeea",
-      "title": "2026第140届中国进出口商品交易会（广交会 C",
-      "link": "http://www.eshow365.com/zhanhui/html/195015_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-09-04T02:27+00:00"
-    },
-    {
-      "id": "c419a34b59a5667472b3ed9ce5b5d16a",
-      "title": "CCLE 2026第十一届中国教育后勤展览会",
-      "link": "http://www.eshow365.com/zhanhui/html/204472_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-09-06T02:25+00:00"
-    },
-    {
-      "id": "7618cdf49ff34565a8ec90be57fdcd9b",
-      "title": "2026中国民用航空维修智造展览会（上海MRO展）",
-      "link": "http://www.eshow365.com/zhanhui/html/200226_0.html",
-      "source": "展会门户：E展网-上海",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-09-06T02:25+00:00"
-    },
-    {
-      "id": "771a21d4404d1325ce60cf21f0cd266b",
-      "title": "2026第十五届天津火锅食材用品展览会（企阳火",
-      "link": "http://www.eshow365.com/zhanhui/html/198723_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-10-01T17:57+00:00"
-    },
-    {
-      "id": "fc1e943473f4f5da0bd741e01793eb40",
-      "title": "2026中国厦门国际茶产业（秋季）博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/195203_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-10-08T18:18+00:00"
-    },
-    {
-      "id": "eb7aa5d7b0cc6f3d6a0ec72874d9dd85",
-      "title": "2026世界工业装备及材料供应链博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/200057_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-10-09T17:51+00:00"
-    },
-    {
-      "id": "62d7864e33b03c7dccd0e8d465b2505d",
-      "title": "2026第二十届中国珠海国际办公设备及耗材展览",
-      "link": "http://www.eshow365.com/zhanhui/html/195485_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-10-09T17:51+00:00"
-    },
-    {
-      "id": "0707188b0cf0f93b3891cfd543c5d971",
-      "title": "2026第54届成都美博会（CCBE）",
-      "link": "http://www.eshow365.com/zhanhui/html/210860_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-15",
-      "summary": "",
-      "first_seen": "2026-10-12T20:44+00:00"
-    },
-    {
       "id": "f67a6c37bd447b8f416e6b28127727b6",
       "title": "2026第四届重庆国际消费品博览会暨遇见巴蜀·",
       "link": "http://www.eshow365.com/zhanhui/html/198706_0.html",
@@ -1403,6 +1313,15 @@
       "pub_date": "2026-10-18",
       "summary": "",
       "first_seen": "2026-10-15T02:46+00:00"
+    },
+    {
+      "id": "f0572eddc38563ca827f5cdef546475f",
+      "title": "2026华南3D打印、增材制造展览会（TCT Shenz",
+      "link": "http://www.eshow365.com/zhanhui/html/199915_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "",
+      "summary": "",
+      "first_seen": "2026-10-18T02:35+00:00"
     },
     {
       "id": "98538b806826aba6b37fb1b045fe2748",
@@ -3322,5 +3241,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-10-17T14:48+00:00"
+  "last_run": "2026-10-18T02:35+00:00"
 }
