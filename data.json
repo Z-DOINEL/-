@@ -1252,51 +1252,6 @@
       "first_seen": "2026-10-19T02:49+00:00"
     },
     {
-      "id": "98538b806826aba6b37fb1b045fe2748",
-      "title": "2026第三十四届中国（深圳）国际礼品及家居用",
-      "link": "http://www.eshow365.com/zhanhui/html/194910_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-20",
-      "summary": "",
-      "first_seen": "2026-08-27T21:35+00:00"
-    },
-    {
-      "id": "80a9a077c8243ba62c44ec789769dbdd",
-      "title": "2026第100届全国汽车配件交易会（CAPF）",
-      "link": "http://www.eshow365.com/zhanhui/html/200030_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-20",
-      "summary": "",
-      "first_seen": "2026-09-04T02:27+00:00"
-    },
-    {
-      "id": "5af5f8788e9699bfd6891acb83044840",
-      "title": "2026临沂第5届印刷包装技术展览会（CIPPE）",
-      "link": "http://www.eshow365.com/zhanhui/html/207527_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-20",
-      "summary": "",
-      "first_seen": "2026-09-04T02:27+00:00"
-    },
-    {
-      "id": "7e337bf6e9bf8841832556559dfb3efe",
-      "title": "2026第十九届上海国际微波及天线技术交流展览会（ IME",
-      "link": "http://www.eshow365.com/zhanhui/html/210742_0.html",
-      "source": "展会门户：E展网-上海",
-      "pub_date": "2026-10-20",
-      "summary": "",
-      "first_seen": "2026-09-17T16:02+00:00"
-    },
-    {
-      "id": "2dfca941faefd556f40fe40f19bf7a4e",
-      "title": "2026第十九届上海国际微波及天线技术交流展览",
-      "link": "http://www.eshow365.com/zhanhui/html/210742_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-20",
-      "summary": "",
-      "first_seen": "2026-09-21T02:50+00:00"
-    },
-    {
       "id": "30de9bff02a6b6514c5f032372397dc4",
       "title": "2026第二十四届中国国际玩具及教育设备展览会（中国玩具",
       "link": "http://www.eshow365.com/zhanhui/html/194842_0.html",
@@ -1826,6 +1781,15 @@
       "pub_date": "2026-10-28",
       "summary": "",
       "first_seen": "2026-10-22T16:27+00:00"
+    },
+    {
+      "id": "1a0a09d2016a76194e66567ab1b7cd5d",
+      "title": "2026第十七届中国大连国际海事展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/192160_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-10-28",
+      "summary": "",
+      "first_seen": "2026-10-23T02:56+00:00"
     },
     {
       "id": "7656aaceb80dea8fe72543c0f5f6e6d3",
@@ -2800,6 +2764,24 @@
       "first_seen": "2026-10-22T16:27+00:00"
     },
     {
+      "id": "41561f7bee2b7f2128a20eb818ab54a6",
+      "title": "2026第十二届亚洲食品电商博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/202417_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-27",
+      "summary": "",
+      "first_seen": "2026-10-23T02:56+00:00"
+    },
+    {
+      "id": "25aa7ad21a8d10353d49b38d8fc8f171",
+      "title": "2026嘉兴食品产业博览会暨农产品博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/199986_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-28",
+      "summary": "",
+      "first_seen": "2026-10-23T02:56+00:00"
+    },
+    {
       "id": "8cb820f26d0e71f512a00a690540f0e4",
       "title": "2026上海国际汽车零配件、维修检测诊断设备",
       "link": "http://www.eshow365.com/zhanhui/html/196712_0.html",
@@ -2834,6 +2816,15 @@
       "pub_date": "2026-12-02",
       "summary": "",
       "first_seen": "2026-07-31T10:04+00:00"
+    },
+    {
+      "id": "b9c4a422273822b9885413b2c57ed3e9",
+      "title": "2026第三十七届中国（杭州）国际纺织服装供应",
+      "link": "http://www.eshow365.com/zhanhui/html/195243_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-02",
+      "summary": "",
+      "first_seen": "2026-10-23T02:56+00:00"
     },
     {
       "id": "c827f5f7b68b679c5da2837bcf45ecb7",
@@ -3052,6 +3043,15 @@
       "first_seen": "2026-10-09T04:06+00:00"
     },
     {
+      "id": "82dd246d1ef36be1da9ca93332f514cb",
+      "title": "2027第18届国际生物发酵产品与技术装备展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/210798_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-09",
+      "summary": "",
+      "first_seen": "2026-10-23T02:56+00:00"
+    },
+    {
       "id": "c253467c3fe0fd694d59e7b7e61689c9",
       "title": "2027中国国际纺织面料及辅料(春夏)博览会",
       "link": "http://www.eshow365.com/zhanhui/html/208644_0.html",
@@ -3086,6 +3086,15 @@
       "pub_date": "2027-03-11",
       "summary": "",
       "first_seen": "2026-07-27T12:39+00:00"
+    },
+    {
+      "id": "b2bf63fcdcdb4d9aa1305341b955b781",
+      "title": "2027第10届中国（临沂）国际制冷、空调及通风",
+      "link": "http://www.eshow365.com/zhanhui/html/199940_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-11",
+      "summary": "",
+      "first_seen": "2026-10-23T02:56+00:00"
     },
     {
       "id": "3280ca092d9ba71b38aca58fc03959c0",
@@ -3493,5 +3502,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-10-22T16:27+00:00"
+  "last_run": "2026-10-23T02:56+00:00"
 }
