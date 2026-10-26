@@ -1252,78 +1252,6 @@
       "first_seen": "2026-10-19T02:49+00:00"
     },
     {
-      "id": "a9a6652c4f265a45cea28f7ef17c0fef",
-      "title": "2026第11届中国（重庆）国际火锅产业博览会（",
-      "link": "http://www.eshow365.com/zhanhui/html/195377_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-23",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "d4298884dde707a60dbb2d9522e159c9",
-      "title": "2026第十六届中国（深圳）国际宠物用品展览会",
-      "link": "http://www.eshow365.com/zhanhui/html/195641_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-23",
-      "summary": "",
-      "first_seen": "2026-08-27T21:35+00:00"
-    },
-    {
-      "id": "cb1952283c3ae2e7fa6f2440378cb369",
-      "title": "2026中国济南国际宠物供应链展览会（思创·宠",
-      "link": "http://www.eshow365.com/zhanhui/html/195639_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-23",
-      "summary": "",
-      "first_seen": "2026-09-06T02:25+00:00"
-    },
-    {
-      "id": "bf15ae5645e79c3181bfad6e75b2a6dd",
-      "title": "2026青岛国际珠宝首饰展览会",
-      "link": "http://www.eshow365.com/zhanhui/html/200164_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-23",
-      "summary": "",
-      "first_seen": "2026-09-10T15:40+00:00"
-    },
-    {
-      "id": "aaf14b1ca36c8c5dc219ecf067107ca8",
-      "title": "2026杭州国际茶产业博览会（杭州秋）（华巨臣",
-      "link": "http://www.eshow365.com/zhanhui/html/195086_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-23",
-      "summary": "",
-      "first_seen": "2026-09-24T16:18+00:00"
-    },
-    {
-      "id": "eccc7d0005040b66510a745aef1365d5",
-      "title": "2026鸿威·世界宠物博览会（GWPF世宠会）十城",
-      "link": "http://www.eshow365.com/zhanhui/html/200344_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-23",
-      "summary": "",
-      "first_seen": "2026-09-28T19:06+00:00"
-    },
-    {
-      "id": "03a9bbc41486136cae297f579bc02823",
-      "title": "2026第23届中国（玉环）国际机床展（华机展）",
-      "link": "http://www.eshow365.com/zhanhui/html/210815_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-23",
-      "summary": "",
-      "first_seen": "2026-10-09T04:06+00:00"
-    },
-    {
-      "id": "9a452896f4657369e1dd8b627ab2cf6b",
-      "title": "2026京津冀安全应急博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/200185_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-10-23",
-      "summary": "",
-      "first_seen": "2026-10-22T16:27+00:00"
-    },
-    {
       "id": "124ab04639ee218fc1f37e91defb615f",
       "title": "2026第54届广州（锦汉）家居用品及礼品展览会",
       "link": "http://www.eshow365.com/zhanhui/html/195017_0.html",
@@ -2989,6 +2917,15 @@
       "first_seen": "2026-10-22T16:27+00:00"
     },
     {
+      "id": "32f5ad52b7b9bd9777384ce6276ab152",
+      "title": "2027第27届中国（济南）新能源电动车三轮车及",
+      "link": "http://www.eshow365.com/zhanhui/html/210823_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-18",
+      "summary": "",
+      "first_seen": "2026-10-26T02:43+00:00"
+    },
+    {
       "id": "a833fa5555d592fa3dba16f60bdbb53f",
       "title": "2027第三十五届上海国际酒店工程设计与用品博览",
       "link": "http://www.eshow365.com/zhanhui/html/199810_0.html",
@@ -3349,5 +3286,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-10-25T15:27+00:00"
+  "last_run": "2026-10-26T02:43+00:00"
 }
