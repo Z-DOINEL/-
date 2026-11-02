@@ -1792,6 +1792,24 @@
       "first_seen": "2026-10-17T02:34+00:00"
     },
     {
+      "id": "d51a02bc66cde4d33b43ea3b799bdab8",
+      "title": "2026第二十六届中国磷复肥工业展览会 暨第十",
+      "link": "http://www.eshow365.com/zhanhui/html/199791_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-06",
+      "summary": "",
+      "first_seen": "2026-11-02T21:16+00:00"
+    },
+    {
+      "id": "044abca339c6bf3a5115abd6402fe497",
+      "title": "2026第二十二届中国国际粮油产品及设备技术展",
+      "link": "http://www.eshow365.com/zhanhui/html/204489_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-06",
+      "summary": "",
+      "first_seen": "2026-11-02T21:16+00:00"
+    },
+    {
       "id": "9218242a5c341874a559aabc3e5ce846",
       "title": "2026中国国际教育展（上海 CEE）",
       "link": "http://www.eshow365.com/zhanhui/html/212983_0.html",
@@ -2213,6 +2231,15 @@
       "pub_date": "2026-11-20",
       "summary": "",
       "first_seen": "2026-10-22T16:27+00:00"
+    },
+    {
+      "id": "d0e5f9691d6c1725d3f69263182465bc",
+      "title": "2026RVSHOW第28届上海国际房车露营展",
+      "link": "http://www.eshow365.com/zhanhui/html/211938_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-20",
+      "summary": "",
+      "first_seen": "2026-11-02T21:16+00:00"
     },
     {
       "id": "ce25776619aabf8dc47a985e07d06706",
@@ -2755,6 +2782,15 @@
       "first_seen": "2026-10-22T16:27+00:00"
     },
     {
+      "id": "7bd7290fc74a48f9324f12a628f44995",
+      "title": "2027中国（成都）国际医疗旅游展览会（正和医",
+      "link": "http://www.eshow365.com/zhanhui/html/213008_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-04",
+      "summary": "",
+      "first_seen": "2026-11-02T21:16+00:00"
+    },
+    {
       "id": "6f8e1c2c41e67631f1035ebfc7aa5e81",
       "title": "2027第50届中原医疗器械(2027年春季)展览会",
       "link": "http://www.eshow365.com/zhanhui/html/210814_0.html",
@@ -2861,6 +2897,15 @@
       "pub_date": "2027-03-12",
       "summary": "",
       "first_seen": "2026-10-31T03:40+00:00"
+    },
+    {
+      "id": "4284a9cd150c0459a655eea2e5d9c24f",
+      "title": "2027深圳国际户外用品及时尚运动展览会（COS",
+      "link": "http://www.eshow365.com/zhanhui/html/210764_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-12",
+      "summary": "",
+      "first_seen": "2026-11-02T21:16+00:00"
     },
     {
       "id": "8aa8ccf431bd31bcade1a3331f4b788a",
@@ -3349,5 +3394,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-02T03:54+00:00"
+  "last_run": "2026-11-02T21:16+00:00"
 }
