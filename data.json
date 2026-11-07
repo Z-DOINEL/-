@@ -1315,24 +1315,6 @@
       "first_seen": "2026-11-01T17:30+00:00"
     },
     {
-      "id": "a350af5c518f71c378e6be0022bb25a6",
-      "title": "2026WOD制造业数字化博览会(深圳数博会)",
-      "link": "http://www.eshow365.com/zhanhui/html/195350_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-04",
-      "summary": "",
-      "first_seen": "2026-10-12T20:44+00:00"
-    },
-    {
-      "id": "ec2d69fd7ae3d9eaa4e37521f347296f",
-      "title": "2026第六届湖州绿色家居博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/202447_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-04",
-      "summary": "",
-      "first_seen": "2026-10-15T02:46+00:00"
-    },
-    {
       "id": "500020e9ae70c947553647f3d76bef56",
       "title": "2026第30届华中（武汉）国际美业博览会（CWB",
       "link": "http://www.eshow365.com/zhanhui/html/213030_0.html",
@@ -2530,6 +2512,15 @@
       "first_seen": "2026-07-18T15:32+00:00"
     },
     {
+      "id": "0c0efe937fb1f07a38387dfe0b2060f4",
+      "title": "2026金属世界博览会 · 上海 MTM 2026第二十",
+      "link": "http://www.eshow365.com/zhanhui/html/195473_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-03",
+      "summary": "",
+      "first_seen": "2026-11-07T04:08+00:00"
+    },
+    {
       "id": "8162ff94bcf21ebccd3d9a412620faa2",
       "title": "2026广州设计周",
       "link": "http://www.eshow365.com/zhanhui/html/199742_0.html",
@@ -3511,5 +3502,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-06T18:45+00:00"
+  "last_run": "2026-11-07T04:08+00:00"
 }
