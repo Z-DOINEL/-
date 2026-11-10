@@ -1333,15 +1333,6 @@
       "first_seen": "2026-11-06T18:45+00:00"
     },
     {
-      "id": "9218242a5c341874a559aabc3e5ce846",
-      "title": "2026中国国际教育展（上海 CEE）",
-      "link": "http://www.eshow365.com/zhanhui/html/212983_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-07",
-      "summary": "",
-      "first_seen": "2026-10-31T03:40+00:00"
-    },
-    {
       "id": "0d0b6ff4ca594f5e0850dee0472d5ef1",
       "title": "2026(第二十三届)中国西南(昆明)国际汽车博览",
       "link": "http://www.eshow365.com/zhanhui/html/200272_0.html",
@@ -1540,6 +1531,15 @@
       "first_seen": "2026-10-28T17:47+00:00"
     },
     {
+      "id": "d047f13fe24cbebfb8edb9bae35f8b68",
+      "title": "2026第十八届中国国际日化产品原料及设备包装",
+      "link": "http://www.eshow365.com/zhanhui/html/207544_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-11",
+      "summary": "",
+      "first_seen": "2026-11-10T05:37+00:00"
+    },
+    {
       "id": "9e8838689b680c132943dad6d17df7ea",
       "title": "2026第十八届郑州国际汽车展览会暨新能源·智",
       "link": "http://www.eshow365.com/zhanhui/html/195146_0.html",
@@ -1619,6 +1619,24 @@
       "pub_date": "2026-11-13",
       "summary": "",
       "first_seen": "2026-11-06T18:45+00:00"
+    },
+    {
+      "id": "2830b318491c410e4691a1df2c43d3da",
+      "title": "2026国际文旅博览会（文旅博览会）",
+      "link": "http://www.eshow365.com/zhanhui/html/199784_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-13",
+      "summary": "",
+      "first_seen": "2026-11-10T05:37+00:00"
+    },
+    {
+      "id": "ed0cab55376728e83dc07f23d550b349",
+      "title": "2026第二十三届中国国际保健博览会（CIHE）",
+      "link": "http://www.eshow365.com/zhanhui/html/207543_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-13",
+      "summary": "",
+      "first_seen": "2026-11-10T05:37+00:00"
     },
     {
       "id": "28e5022f682472434feea8ef99a4288f",
@@ -2125,6 +2143,24 @@
       "first_seen": "2026-11-07T04:08+00:00"
     },
     {
+      "id": "d9fb7ce79738fdd30bfa992d880a07cb",
+      "title": "2026第三十三届中国国际电力设备及技术展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/199806_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-03",
+      "summary": "",
+      "first_seen": "2026-11-10T05:37+00:00"
+    },
+    {
+      "id": "97e7984cd062562761b8c83a80f05fd9",
+      "title": "2026国际数据中心及云计算产业展览会(CDCE)",
+      "link": "http://www.eshow365.com/zhanhui/html/199935_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-03",
+      "summary": "",
+      "first_seen": "2026-11-10T05:37+00:00"
+    },
+    {
       "id": "8162ff94bcf21ebccd3d9a412620faa2",
       "title": "2026广州设计周",
       "link": "http://www.eshow365.com/zhanhui/html/199742_0.html",
@@ -2195,6 +2231,15 @@
       "pub_date": "2026-12-09",
       "summary": "",
       "first_seen": "2026-10-26T18:05+00:00"
+    },
+    {
+      "id": "af22787b013d9ce799d060c53bae021f",
+      "title": "2026第二十届中国国际轴承及其专用装备展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/194958_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-09",
+      "summary": "",
+      "first_seen": "2026-11-10T05:37+00:00"
     },
     {
       "id": "994a6b69d1a77b3d8420ca1dc228a723",
@@ -2366,6 +2411,15 @@
       "pub_date": "2027-02-25",
       "summary": "",
       "first_seen": "2026-11-04T04:26+00:00"
+    },
+    {
+      "id": "59f473dc6ddc5ae27a23045e60a10b10",
+      "title": "DIC2027全球数智算力大会暨展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/213005_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-02-25",
+      "summary": "",
+      "first_seen": "2026-11-10T05:37+00:00"
     },
     {
       "id": "adfe07c5ffc2375ddfc584f8bf1c4a54",
@@ -3124,5 +3178,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-09T21:50+00:00"
+  "last_run": "2026-11-10T05:37+00:00"
 }
