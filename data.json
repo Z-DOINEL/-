@@ -1360,69 +1360,6 @@
       "first_seen": "2026-11-09T21:50+00:00"
     },
     {
-      "id": "4c87b32ce3d0077d5029b38cff4a8c2a",
-      "title": "2026第二十三届中国国际农产品交易会",
-      "link": "http://www.eshow365.com/zhanhui/html/200373_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-13",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "c228cc5bd22ffd3bd5c5910e8a6deabe",
-      "title": "2026中国体育文化博览会、中国体育旅游博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/204487_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-13",
-      "summary": "",
-      "first_seen": "2026-08-21T00:56+00:00"
-    },
-    {
-      "id": "6e21f69339e143e6803130e3a5a4eb86",
-      "title": "2026第四十五届中国北京国际美容化妆品博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/200244_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-13",
-      "summary": "",
-      "first_seen": "2026-10-14T03:06+00:00"
-    },
-    {
-      "id": "0411b230334ec8cbb2a5884fe7569455",
-      "title": "2026北京国际美容美发化妆品展览会",
-      "link": "http://www.eshow365.com/zhanhui/html/213032_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-13",
-      "summary": "",
-      "first_seen": "2026-11-04T19:16+00:00"
-    },
-    {
-      "id": "741fd9e73ea90fabfbb189b0cc70b83a",
-      "title": "2026厦门国际鞋业博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/195574_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-13",
-      "summary": "",
-      "first_seen": "2026-11-06T18:45+00:00"
-    },
-    {
-      "id": "2830b318491c410e4691a1df2c43d3da",
-      "title": "2026国际文旅博览会（文旅博览会）",
-      "link": "http://www.eshow365.com/zhanhui/html/199784_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-13",
-      "summary": "",
-      "first_seen": "2026-11-10T05:37+00:00"
-    },
-    {
-      "id": "ed0cab55376728e83dc07f23d550b349",
-      "title": "2026第二十三届中国国际保健博览会（CIHE）",
-      "link": "http://www.eshow365.com/zhanhui/html/207543_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-13",
-      "summary": "",
-      "first_seen": "2026-11-10T05:37+00:00"
-    },
-    {
       "id": "28e5022f682472434feea8ef99a4288f",
       "title": "2026第十二届济南国际乐器业展览会 （弘博全",
       "link": "http://www.eshow365.com/zhanhui/html/195121_0.html",
@@ -1936,6 +1873,24 @@
       "first_seen": "2026-11-14T17:33+00:00"
     },
     {
+      "id": "576944ba246dcb421bf1bd68d310eaac",
+      "title": "2026第20届中国（深圳）国际物流与供应链博览会 12月2日",
+      "link": "http://www.eshow365.com/zhanhui/html/195157_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-26",
+      "summary": "",
+      "first_seen": "2026-11-16T04:19+00:00"
+    },
+    {
+      "id": "c407e7c2cf8e6ebbdbd74306fe6b35a6",
+      "title": "2026第三十三届中国国际电力设备及技术展览会 12月3日",
+      "link": "http://www.eshow365.com/zhanhui/html/199806_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-26",
+      "summary": "",
+      "first_seen": "2026-11-16T04:19+00:00"
+    },
+    {
       "id": "39194f9c559e7bc1171aaa50fbaa3b64",
       "title": "2026中国(南京)国际珠宝首饰展览会（海名珠宝",
       "link": "http://www.eshow365.com/zhanhui/html/200167_0.html",
@@ -2231,6 +2186,15 @@
       "pub_date": "2026-12-09",
       "summary": "",
       "first_seen": "2026-11-11T04:10+00:00"
+    },
+    {
+      "id": "f399b75cea10907bc0aea39206c9d6d3",
+      "title": "2026全球消费电子展暨国际消费电子及家电展览",
+      "link": "http://www.eshow365.com/zhanhui/html/208653_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-09",
+      "summary": "",
+      "first_seen": "2026-11-16T04:19+00:00"
     },
     {
       "id": "994a6b69d1a77b3d8420ca1dc228a723",
@@ -3277,5 +3241,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-15T18:22+00:00"
+  "last_run": "2026-11-16T04:19+00:00"
 }
