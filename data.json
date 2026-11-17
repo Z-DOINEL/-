@@ -1972,6 +1972,15 @@
       "first_seen": "2026-10-23T02:56+00:00"
     },
     {
+      "id": "3adaf8d88193ddef083c3cdf5c71bb65",
+      "title": "2026第二十三届中国（临沂）国际糖酒商品交易",
+      "link": "http://www.eshow365.com/zhanhui/html/214369_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-28",
+      "summary": "",
+      "first_seen": "2026-11-17T20:20+00:00"
+    },
+    {
       "id": "8cb820f26d0e71f512a00a690540f0e4",
       "title": "2026上海国际汽车零配件、维修检测诊断设备",
       "link": "http://www.eshow365.com/zhanhui/html/196712_0.html",
@@ -2242,6 +2251,15 @@
       "first_seen": "2026-10-22T16:27+00:00"
     },
     {
+      "id": "c7f1b7f36eb7ed08bc1afa8ad767f4fc",
+      "title": "2026中国（义乌）外贸工厂展览会",
+      "link": "http://www.eshow365.com/zhanhui/html/214329_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-10",
+      "summary": "",
+      "first_seen": "2026-11-17T20:20+00:00"
+    },
+    {
       "id": "19e23b4ff4c3cbe1bbbb1a476197f422",
       "title": "2026年烟台年末汽车惠民促销展",
       "link": "http://www.eshow365.com/zhanhui/html/195188_0.html",
@@ -2368,6 +2386,24 @@
       "first_seen": "2026-11-11T19:07+00:00"
     },
     {
+      "id": "04ef792f992392a7a72f6fa042ba9154",
+      "title": "2027第24届济南新春年货会",
+      "link": "http://www.eshow365.com/zhanhui/html/214332_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-01-21",
+      "summary": "",
+      "first_seen": "2026-11-17T20:20+00:00"
+    },
+    {
+      "id": "ad0290f726d1ab10022cc2149eaa776a",
+      "title": "2027第24届济南舜耕年货会",
+      "link": "http://www.eshow365.com/zhanhui/html/214331_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-01-22",
+      "summary": "",
+      "first_seen": "2026-11-17T20:20+00:00"
+    },
+    {
       "id": "eb7631037d50a09dac98ca728cf56ed3",
       "title": "2027第三十三届中国国际钓鱼用品贸易展览会（",
       "link": "http://www.eshow365.com/zhanhui/html/214210_0.html",
@@ -2476,6 +2512,15 @@
       "first_seen": "2026-10-22T16:27+00:00"
     },
     {
+      "id": "ff8e231a589033f97b5fabacfc19025f",
+      "title": "2027济南国际数控机床展览会 2026第30届济南",
+      "link": "http://www.eshow365.com/zhanhui/html/214335_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-02-26",
+      "summary": "",
+      "first_seen": "2026-11-17T20:20+00:00"
+    },
+    {
       "id": "c20be5276ffde2c605d927bfe475c7fb",
       "title": "2027第12届上海CME国际机床展览会（华机展",
       "link": "http://www.eshow365.com/zhanhui/html/199800_0.html",
@@ -2519,6 +2564,15 @@
       "pub_date": "2027-03-04",
       "summary": "",
       "first_seen": "2026-11-02T21:16+00:00"
+    },
+    {
+      "id": "6fcf3e73a5e79b190ac4b159e2459af0",
+      "title": "2027第二十四届中国（临沂）小商品博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/214339_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-04",
+      "summary": "",
+      "first_seen": "2026-11-17T20:20+00:00"
     },
     {
       "id": "6f8e1c2c41e67631f1035ebfc7aa5e81",
@@ -2962,6 +3016,15 @@
       "first_seen": "2026-08-09T04:45+00:00"
     },
     {
+      "id": "730806494f12e33132e3ea017376def3",
+      "title": "2027第26届中国（南京）国际电池及储能技术展",
+      "link": "http://www.eshow365.com/zhanhui/html/202395_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-04-21",
+      "summary": "",
+      "first_seen": "2026-11-17T20:20+00:00"
+    },
+    {
       "id": "d3f82017c5025a9622f5e44441a733c9",
       "title": "2027第二十九届中国（上海）国际医疗旅游展览会",
       "link": "http://www.eshow365.com/zhanhui/html/210719_0.html",
@@ -3295,5 +3358,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-17T06:03+00:00"
+  "last_run": "2026-11-17T20:20+00:00"
 }
