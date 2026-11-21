@@ -1837,6 +1837,15 @@
       "first_seen": "2026-11-20T19:30+00:00"
     },
     {
+      "id": "1676bb6f3b736aa72f7ce0d7a29860e4",
+      "title": "2026第十五届中国（温州）食品博览会（食博会",
+      "link": "http://www.eshow365.com/zhanhui/html/214440_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-26",
+      "summary": "",
+      "first_seen": "2026-11-21T18:34+00:00"
+    },
+    {
       "id": "39194f9c559e7bc1171aaa50fbaa3b64",
       "title": "2026中国(南京)国际珠宝首饰展览会（海名珠宝",
       "link": "http://www.eshow365.com/zhanhui/html/200167_0.html",
@@ -2386,6 +2395,15 @@
       "first_seen": "2026-11-20T19:30+00:00"
     },
     {
+      "id": "9ce5bd26b64eeea5c7933459ccb91a72",
+      "title": "长三角农产品博览会暨2027新春年货节",
+      "link": "http://www.eshow365.com/zhanhui/html/214422_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-01-15",
+      "summary": "",
+      "first_seen": "2026-11-21T18:34+00:00"
+    },
+    {
       "id": "04ef792f992392a7a72f6fa042ba9154",
       "title": "2027第24届济南新春年货会",
       "link": "http://www.eshow365.com/zhanhui/html/214332_0.html",
@@ -2555,6 +2573,15 @@
       "pub_date": "2027-03-01",
       "summary": "",
       "first_seen": "2026-09-17T16:02+00:00"
+    },
+    {
+      "id": "24e5559018f94a8edbfbbcf02353c1cb",
+      "title": "2027第25届全国仿真植物花卉、婚庆道具、美陈",
+      "link": "http://www.eshow365.com/zhanhui/html/214437_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-01",
+      "summary": "",
+      "first_seen": "2026-11-21T18:34+00:00"
     },
     {
       "id": "3f6bce6a6038292124e883b119d8f83f",
@@ -3457,5 +3484,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-21T05:10+00:00"
+  "last_run": "2026-11-21T18:34+00:00"
 }
