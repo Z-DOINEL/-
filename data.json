@@ -1792,6 +1792,15 @@
       "first_seen": "2026-11-21T18:34+00:00"
     },
     {
+      "id": "6f56b86c05103478cb4b1cdd672f48ce",
+      "title": "2026第二十七届国际模具、金属加工、橡塑胶及包装展 12月3日",
+      "link": "http://www.eshow365.com/zhanhui/html/214319_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-26",
+      "summary": "",
+      "first_seen": "2026-11-22T18:55+00:00"
+    },
+    {
       "id": "39194f9c559e7bc1171aaa50fbaa3b64",
       "title": "2026中国(南京)国际珠宝首饰展览会（海名珠宝",
       "link": "http://www.eshow365.com/zhanhui/html/200167_0.html",
@@ -2051,6 +2060,15 @@
       "pub_date": "2026-12-03",
       "summary": "",
       "first_seen": "2026-11-16T21:30+00:00"
+    },
+    {
+      "id": "db1a0b1e928dcba6b957e24bd3f23ba1",
+      "title": "2026第十九届义乌汽车文化节",
+      "link": "http://www.eshow365.com/zhanhui/html/214462_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-03",
+      "summary": "",
+      "first_seen": "2026-11-22T18:55+00:00"
     },
     {
       "id": "8162ff94bcf21ebccd3d9a412620faa2",
@@ -2368,6 +2386,15 @@
       "first_seen": "2026-11-17T20:20+00:00"
     },
     {
+      "id": "20fe46bfde85418ba316e82ab9424cc7",
+      "title": "2027第十八届台州工业博览会（台州工博会 泵",
+      "link": "http://www.eshow365.com/zhanhui/html/214455_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-02-13",
+      "summary": "",
+      "first_seen": "2026-11-22T18:55+00:00"
+    },
+    {
       "id": "eb7631037d50a09dac98ca728cf56ed3",
       "title": "2027第三十三届中国国际钓鱼用品贸易展览会（",
       "link": "http://www.eshow365.com/zhanhui/html/214210_0.html",
@@ -2393,6 +2420,15 @@
       "pub_date": "2027-02-21",
       "summary": "",
       "first_seen": "2026-11-11T04:10+00:00"
+    },
+    {
+      "id": "875f3e075b837975981b8b6b221b70e1",
+      "title": "2027浙江美丽健康产业博览会第53届杭州美容美",
+      "link": "http://www.eshow365.com/zhanhui/html/214452_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-02-22",
+      "summary": "",
+      "first_seen": "2026-11-22T18:55+00:00"
     },
     {
       "id": "b5761ad22c60fbb529f0b6b0b8f59636",
@@ -3430,5 +3466,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-22T04:36+00:00"
+  "last_run": "2026-11-22T18:55+00:00"
 }
