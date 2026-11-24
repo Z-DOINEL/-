@@ -1747,6 +1747,24 @@
       "first_seen": "2026-11-20T19:30+00:00"
     },
     {
+      "id": "271f95ab2d7886fa25678aded6aaf9c2",
+      "title": "2026第二十七届中国(安徽)国际糖酒食品交易会",
+      "link": "http://www.eshow365.com/zhanhui/html/193279_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-27",
+      "summary": "",
+      "first_seen": "2026-11-24T21:49+00:00"
+    },
+    {
+      "id": "ddb6fd17d526befed7b1fa2968968ef9",
+      "title": "FCIE·2026中国长三角食品及酒饮渠道创新展览",
+      "link": "http://www.eshow365.com/zhanhui/html/200120_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-11-27",
+      "summary": "",
+      "first_seen": "2026-11-24T21:49+00:00"
+    },
+    {
       "id": "25aa7ad21a8d10353d49b38d8fc8f171",
       "title": "2026嘉兴食品产业博览会暨农产品博览会",
       "link": "http://www.eshow365.com/zhanhui/html/199986_0.html",
@@ -2404,6 +2422,15 @@
       "first_seen": "2026-11-20T19:30+00:00"
     },
     {
+      "id": "994c516ad9fee1e34d2eee62a35047be",
+      "title": "2027第三十四届迪培思广州国际广告标识及喷墨",
+      "link": "http://www.eshow365.com/zhanhui/html/200196_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-02-24",
+      "summary": "",
+      "first_seen": "2026-11-24T21:49+00:00"
+    },
+    {
       "id": "83309824fe3302ed98af208e6f10d5fe",
       "title": "2027CFIE中国食材展暨华食展（上海）",
       "link": "http://www.eshow365.com/zhanhui/html/199906_0.html",
@@ -2728,6 +2755,15 @@
       "first_seen": "2026-11-23T23:16+00:00"
     },
     {
+      "id": "6915a7e2b52551b75e5b55c4a256dfbe",
+      "title": "2027第21届中国（山东）国际农业机械展览会（",
+      "link": "http://www.eshow365.com/zhanhui/html/214334_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-12",
+      "summary": "",
+      "first_seen": "2026-11-24T21:49+00:00"
+    },
+    {
       "id": "5778eeab6efcc110f2f60e605945e688",
       "title": "2027第34届沸点会（杭州）全国私域大会+展会",
       "link": "http://www.eshow365.com/zhanhui/html/213092_0.html",
@@ -2888,6 +2924,15 @@
       "pub_date": "2027-03-25",
       "summary": "",
       "first_seen": "2026-11-06T18:45+00:00"
+    },
+    {
+      "id": "e5495a8ab3f7925cd80858af7feb7a89",
+      "title": "2027GT Show苏州汽车改装展",
+      "link": "http://www.eshow365.com/zhanhui/html/214389_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-26",
+      "summary": "",
+      "first_seen": "2026-11-24T21:49+00:00"
     },
     {
       "id": "a833fa5555d592fa3dba16f60bdbb53f",
@@ -3421,5 +3466,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-24T07:56+00:00"
+  "last_run": "2026-11-24T21:49+00:00"
 }
