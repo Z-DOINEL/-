@@ -1387,42 +1387,6 @@
       "first_seen": "2026-11-16T21:30+00:00"
     },
     {
-      "id": "4c6ed1be96e6a46556524d6a02c2af2c",
-      "title": "2026第十三届中国(南京)国际管网展览会 2026",
-      "link": "http://www.eshow365.com/zhanhui/html/195047_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-25",
-      "summary": "",
-      "first_seen": "2026-07-18T15:32+00:00"
-    },
-    {
-      "id": "42f230144560b974c05aa96b467fe915",
-      "title": "2026中国国际天然提取物和健康食品配料展览会",
-      "link": "http://www.eshow365.com/zhanhui/html/199916_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-25",
-      "summary": "",
-      "first_seen": "2026-09-21T02:50+00:00"
-    },
-    {
-      "id": "93112c97588807bc22eb08d2e731bab3",
-      "title": "2026第二十届中国宁波中小工厂展览会",
-      "link": "http://www.eshow365.com/zhanhui/html/195250_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-25",
-      "summary": "",
-      "first_seen": "2026-10-22T16:27+00:00"
-    },
-    {
-      "id": "0c1e0645aefa7bfa84fc1e02faa97232",
-      "title": "2026第19届中国(临沂)多元百货博览会",
-      "link": "http://www.eshow365.com/zhanhui/html/214380_0.html",
-      "source": "展会门户：E展网",
-      "pub_date": "2026-11-25",
-      "summary": "",
-      "first_seen": "2026-11-18T19:54+00:00"
-    },
-    {
       "id": "1842c32b77f731c00f6f0b6c9ef838b0",
       "title": "2026第二十八届中国国际高新技术成果交易会（",
       "link": "http://www.eshow365.com/zhanhui/html/195159_0.html",
@@ -1970,6 +1934,15 @@
       "pub_date": "2026-12-03",
       "summary": "",
       "first_seen": "2026-11-26T06:24+00:00"
+    },
+    {
+      "id": "6be0eafa74e435925a340c248b14e13b",
+      "title": "2026第5届市政工程建设产业博览会",
+      "link": "http://www.eshow365.com/zhanhui/html/216573_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2026-12-03",
+      "summary": "",
+      "first_seen": "2026-11-28T05:53+00:00"
     },
     {
       "id": "8162ff94bcf21ebccd3d9a412620faa2",
@@ -2656,6 +2629,15 @@
       "first_seen": "2026-11-25T20:56+00:00"
     },
     {
+      "id": "58a9e0297e7bc96b2f574e4f9dd2ef4a",
+      "title": "2027第二十届杭州全球新电商博览会暨私域直播",
+      "link": "http://www.eshow365.com/zhanhui/html/214425_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-06",
+      "summary": "",
+      "first_seen": "2026-11-28T05:53+00:00"
+    },
+    {
       "id": "6f8e1c2c41e67631f1035ebfc7aa5e81",
       "title": "2027第50届中原医疗器械(2027年春季)展览会",
       "link": "http://www.eshow365.com/zhanhui/html/210814_0.html",
@@ -2881,6 +2863,15 @@
       "first_seen": "2026-11-13T04:37+00:00"
     },
     {
+      "id": "ebe32a939c7515e860e2b3a335ac09b8",
+      "title": "2027第26届中国（济南）国际数字安防产业博览",
+      "link": "http://www.eshow365.com/zhanhui/html/214360_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-13",
+      "summary": "",
+      "first_seen": "2026-11-28T05:53+00:00"
+    },
+    {
       "id": "8aa8ccf431bd31bcade1a3331f4b788a",
       "title": "2027春季（郑州）第四十六届中原广告展",
       "link": "http://www.eshow365.com/zhanhui/html/211943_0.html",
@@ -2906,6 +2897,15 @@
       "pub_date": "2027-03-16",
       "summary": "",
       "first_seen": "2026-11-16T21:30+00:00"
+    },
+    {
+      "id": "a73081da4c405acb9c8f14f69a795641",
+      "title": "2027第十五届储能国际峰会暨展览会（ESIE）",
+      "link": "http://www.eshow365.com/zhanhui/html/214188_0.html",
+      "source": "展会门户：E展网",
+      "pub_date": "2027-03-16",
+      "summary": "",
+      "first_seen": "2026-11-28T05:53+00:00"
     },
     {
       "id": "3d36dbdccc1b0c2ea92389b8c25ad29e",
@@ -3646,5 +3646,5 @@
       "first_seen": "2026-09-06T02:25+00:00"
     }
   ],
-  "last_run": "2026-11-27T20:33+00:00"
+  "last_run": "2026-11-28T05:53+00:00"
 }
